@@ -1,0 +1,20 @@
+[submodule "distribution"]
+	path = distribution
+	url = git@github.com:CellProfiler/distribution.git
+[submodule "cp"]
+	path = cp
+	url = https://github.com/CellProfiler/CellProfiler
+	branch = 4.2.x
+[submodule "core"]
+	path = core
+	url = https://github.com/CellProfiler/core
+	branch = 4.2.x
+[submodule "python-javabridge"]
+	path = python-javabridge
+	url = https://github.com/CellProfiler/python-javabridge
+[submodule "python-bioformats"]
+	path = python-bioformats
+	url = https://github.com/CellProfiler/python-bioformats
+[submodule "centrosome"]
+	path = centrosome
+	url = https://github.com/CellProfiler/centrosome

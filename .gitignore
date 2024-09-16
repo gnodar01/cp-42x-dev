@@ -2,9 +2,4 @@
 .pixi
 *.egg-info
 .DS_STORE
-core/
-cp/
-distribution/
-python-bioformats/
-python-javabridge/
 
