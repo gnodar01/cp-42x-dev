@@ -1,0 +1,34 @@
+[project]
+name = "CellProfiler42x"
+version = "4.2.8"
+description = "Dev environment for CP42x"
+authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["osx-64"]
+# platforms = ["osx-64", "osx-arm64"]
+
+[tasks]
+cp = { cmd = ["python", "-m", "cellprofiler"] }
+
+[target.osx.tasks]
+cpwd = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
+cp = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
+
+[dependencies]
+python = "3.9.*"
+
+[target.osx.dependencies]
+"python.app" = ">=1.4,<2"
+
+# [feature.mod.dependencies]
+# numpy = "1.24.*"
+# cython = "0.29.*"
+
+[feature.mod.pypi-dependencies]
+# python-javabridge = { path = "./python-javabridge", editable = true }
+# python-bioformats = { path = "./python-bioformats", editable = true }
+cellprofiler-core = { path = "./core", extras = ["test", "dev"], editable = true }
+cellprofiler = { path = "./cp", extras = ["test", "build", "docs"], editable = true }
+
+[environments]
+dev = ["mod"]
