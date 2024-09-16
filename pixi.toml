@@ -27,6 +27,7 @@ python = "3.9.*"
 [feature.mod.pypi-dependencies]
 # python-javabridge = { path = "./python-javabridge", editable = true }
 # python-bioformats = { path = "./python-bioformats", editable = true }
+# centrosome = { path = "./centrosome", editable = true }
 cellprofiler-core = { path = "./core", extras = ["test", "dev"], editable = true }
 cellprofiler = { path = "./cp", extras = ["test", "build", "docs"], editable = true }
 
