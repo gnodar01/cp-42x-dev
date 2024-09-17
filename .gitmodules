@@ -1,6 +1,7 @@
 [submodule "distribution"]
 	path = distribution
 	url = git@github.com:CellProfiler/distribution.git
+	branch = 4.2.x
 [submodule "cp"]
 	path = cp
 	url = https://github.com/CellProfiler/CellProfiler
