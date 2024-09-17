@@ -113,8 +113,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/ff/ae/f19306b5a221f6a436d8f2238d5b80925004093fa3edea59835b514d9057/setuptools-75.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/dc/c02e01294f7265e63a7315fe086dd1df7dacb9f840a804da846b96d01b96/snowballstemmer-2.2.0-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e0/bb/bbe3f555751da411ed892526d0d78ed1b9ff2a25ed2b0dab9f2670c8da07/Sphinx-3.1.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/18/01/76f40a18e9209bb098c1c1313c823dbbd001b23a2db71e7fd4eb5a48559c/sphinx_rtd_theme-1.3.0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/83/74/318d8cd70cbde2164e3035f9e9ba0807e2de7d384e03784ad0afc98b891b/Sphinx-5.1.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ea/46/00fda84467815c29951a9c91e3ae7503c409ddad04373e7cfc78daad4300/sphinx_rtd_theme-2.0.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5d/85/9ebeae2f76e9e77b952f4b274c27238156eae7979c5421fba91a28f4970d/sphinxcontrib_applehelp-2.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/35/7a/987e583882f985fe4d7323774889ec58049171828b58c2217e7f79cdf44e/sphinxcontrib_devhelp-2.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/0a/7b/18a8c0bcec9182c05a0b3ec2a776bba4ead82750a55ff798e8d406dae604/sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl
@@ -339,7 +339,7 @@ packages:
   name: cellprofiler-core
   version: 4.2.8
   path: ./core
-  sha256: ff2c06902e97a4e8776e73e1b990b9dddb9aa6e2faa51c2079fe0fe95a03dde9
+  sha256: c1d84f424922190814bb2800ffc204dd9dd5999034f681a9bd7298d76ff284bf
   requires_dist:
   - boto3>=1.12.28
   - centrosome<1.3,>=1.2.3
@@ -354,7 +354,7 @@ packages:
   - pyzmq~=22.3
   - scikit-image==0.18.3
   - scipy>=1.4.1
-  - sphinx==3.1.2 ; extra == 'dev'
+  - sphinx>=3.1.2 ; extra == 'dev'
   - twine==3.1.1 ; extra == 'dev'
   - pytest~=7.4.1 ; extra == 'test'
   - wxpython==4.1.0 ; extra == 'wx'
@@ -1606,52 +1606,56 @@ packages:
   sha256: c8e1716e83cc398ae16824e5572ae04e0d9fc2c6b985fb0f900f5f0c96ecba1a
 - kind: pypi
   name: sphinx
-  version: 3.1.2
-  url: https://files.pythonhosted.org/packages/e0/bb/bbe3f555751da411ed892526d0d78ed1b9ff2a25ed2b0dab9f2670c8da07/Sphinx-3.1.2-py3-none-any.whl
-  sha256: 97dbf2e31fc5684bb805104b8ad34434ed70e6c588f6896991b2fdfd2bef8c00
+  version: 5.1.1
+  url: https://files.pythonhosted.org/packages/83/74/318d8cd70cbde2164e3035f9e9ba0807e2de7d384e03784ad0afc98b891b/Sphinx-5.1.1-py3-none-any.whl
+  sha256: 309a8da80cb6da9f4713438e5b55861877d5d7976b69d87e336733637ea12693
   requires_dist:
   - sphinxcontrib-applehelp
   - sphinxcontrib-devhelp
   - sphinxcontrib-jsmath
-  - sphinxcontrib-htmlhelp
-  - sphinxcontrib-serializinghtml
+  - sphinxcontrib-htmlhelp>=2.0.0
+  - sphinxcontrib-serializinghtml>=1.1.5
   - sphinxcontrib-qthelp
   - jinja2>=2.3
   - pygments>=2.0
-  - docutils>=0.12
+  - docutils<0.20,>=0.14
   - snowballstemmer>=1.1
   - babel>=1.3
   - alabaster<0.8,>=0.7
   - imagesize
   - requests>=2.5.0
-  - setuptools
   - packaging
+  - importlib-metadata>=4.4 ; python_version < '3.10'
   - colorama>=0.3.5 ; sys_platform == 'win32'
   - sphinxcontrib-websupport ; extra == 'docs'
   - flake8>=3.5.0 ; extra == 'lint'
-  - flake8-import-order ; extra == 'lint'
-  - mypy>=0.780 ; extra == 'lint'
+  - flake8-comprehensions ; extra == 'lint'
+  - flake8-bugbear ; extra == 'lint'
+  - isort ; extra == 'lint'
+  - mypy>=0.971 ; extra == 'lint'
+  - sphinx-lint ; extra == 'lint'
   - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  - pytest-cov ; extra == 'test'
+  - types-typed-ast ; extra == 'lint'
+  - types-requests ; extra == 'lint'
+  - pytest>=4.6 ; extra == 'test'
   - html5lib ; extra == 'test'
-  - typed-ast ; extra == 'test'
   - cython ; extra == 'test'
-  requires_python: '>=3.5'
+  - typed-ast ; python_version < '3.8' and extra == 'test'
+  requires_python: '>=3.6'
 - kind: pypi
   name: sphinx-rtd-theme
-  version: 1.3.0
-  url: https://files.pythonhosted.org/packages/18/01/76f40a18e9209bb098c1c1313c823dbbd001b23a2db71e7fd4eb5a48559c/sphinx_rtd_theme-1.3.0-py2.py3-none-any.whl
-  sha256: 46ddef89cc2416a81ecfbeaceab1881948c014b1b6e4450b815311a89fb977b0
+  version: 2.0.0
+  url: https://files.pythonhosted.org/packages/ea/46/00fda84467815c29951a9c91e3ae7503c409ddad04373e7cfc78daad4300/sphinx_rtd_theme-2.0.0-py2.py3-none-any.whl
+  sha256: ec93d0856dc280cf3aee9a4c9807c60e027c7f7b461b77aeffed682e68f0e586
   requires_dist:
-  - sphinx<8,>=1.6
-  - docutils<0.19
+  - sphinx<8,>=5
+  - docutils<0.21
   - sphinxcontrib-jquery<5,>=4
   - transifex-client ; extra == 'dev'
   - sphinxcontrib-httpdomain ; extra == 'dev'
   - bump2version ; extra == 'dev'
   - wheel ; extra == 'dev'
-  requires_python: '!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7'
+  requires_python: '>=3.6'
 - kind: pypi
   name: sphinxcontrib-applehelp
   version: 2.0.0
