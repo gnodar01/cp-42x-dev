@@ -76,7 +76,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/4e/45/5a5c46078362cb3882dcacad687c503089263c017ca1241e0483857791eb/kiwisolver-1.4.7-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/d1/5d/c059c180c84f7962db0aeae7c3b9303ed1d73d76f2bfbc32bc231c8be314/macholib-1.16.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/2a/84/7c9025ffed11db2798c804ed30ccdde47344ab2d464e704377b46c103803/mahotas-1.4.18-cp39-cp39-macosx_10_9_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/68/ee/44409a47dc0d273a067fc5661bb8e4ea9b5c82ba4d4e189c99634269967c/MarkupSafe-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/6a/84/be0acd521fa9d6697657cf35878153f8009a42b4b75237aebc302559a8a9/matplotlib-3.7.5-cp39-cp39-macosx_10_12_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/48/7e/3a64597054a70f7c86eb0a7d4fc315b8c1ab932f64883a297bdffeb5f967/more_itertools-10.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d0/97/7326248ac8d5049968bf4ec708a5d3d4806e412a42e74160d7f266a3e03a/mysqlclient-1.4.6.tar.gz
@@ -299,7 +299,7 @@ packages:
   name: cellprofiler
   version: 4.2.8
   path: ./cp
-  sha256: dfc4e0b2cf6f411d2e38b7651939fdb65efab9e36eba25a22fa80b668369094e
+  sha256: a282889d6c2f28d176e78f54f3c7fe4d307333497beb9c30bcfe0fe94b9f0822
   requires_dist:
   - boto3>=1.12.28
   - cellprofiler-core==4.2.8
@@ -331,6 +331,7 @@ packages:
   - twine ; extra == 'build'
   - sphinx>=3.1.1 ; extra == 'docs'
   - sphinx-rtd-theme>=0.5.0 ; extra == 'docs'
+  - markupsafe<2.0.1 ; extra == 'docs'
   - pytest~=7.4.1 ; extra == 'test'
   requires_python: '>=3.8'
   editable: true
@@ -889,10 +890,10 @@ packages:
   - pillow ; extra == 'tests'
 - kind: pypi
   name: markupsafe
-  version: 2.1.5
-  url: https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl
-  sha256: db0b55e0f3cc0be60c1f19efdde9a637c32740486004f20d1cff53c3c0ece4d2
-  requires_python: '>=3.7'
+  version: 2.0.0
+  url: https://files.pythonhosted.org/packages/68/ee/44409a47dc0d273a067fc5661bb8e4ea9b5c82ba4d4e189c99634269967c/MarkupSafe-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl
+  sha256: dab0c685f21f4a6c95bfc2afd1e7eae0033b403dd3d8c1b6d13a652ada75b348
+  requires_python: '>=3.6'
 - kind: pypi
   name: matplotlib
   version: 3.7.5
