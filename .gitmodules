@@ -19,3 +19,7 @@
 [submodule "centrosome"]
 	path = centrosome
 	url = https://github.com/CellProfiler/centrosome
+[submodule "release"]
+	path = release
+	url = git@github.com:CellProfiler/release.git
+	branch = 4.2.x
