@@ -28,6 +28,7 @@ python = "3.9.*"
 # python-javabridge = { path = "./python-javabridge", editable = true }
 # python-bioformats = { path = "./python-bioformats", editable = true }
 # centrosome = { path = "./centrosome", editable = true }
+cellprofiler-release = { path = "./release", editable = true }
 cellprofiler-core = { path = "./core", extras = ["test", "dev"], editable = true }
 cellprofiler = { path = "./cp", extras = ["test", "build", "docs"], editable = true }
 build = ">=1.2.2, <2"
