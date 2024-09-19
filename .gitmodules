@@ -22,4 +22,3 @@
 [submodule "release"]
 	path = release
 	url = git@github.com:CellProfiler/release.git
-	branch = 4.2.x
