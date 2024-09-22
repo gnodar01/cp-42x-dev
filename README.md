@@ -11,7 +11,7 @@ Clone the directory and setup submodules:
 ```bash
 git clone git@github.com:gnodar01/cp-42x-dev.git
 git submodule init
-git submodule update
+git submodule update --remote
 ```
 
 [Install pixi](https://pixi.sh/latest/#__tabbed_1_1)
