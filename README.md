@@ -22,8 +22,6 @@ curl -fsSL https://pixi.sh/install.sh | bash
 
 Install the project dependencies:
 
-**NOTE:** unlike the CellProfiler 5 branch, this does not come with `mysql` or `java`. Those must be installed beforehand.
-
 ```bash
 pixi install --all
 ```
@@ -33,4 +31,15 @@ Run cellprofiler:
 ```bash
 pixi run -e dev cp
 ```
+
+or activate the python envrionment
+
+```bash
+pixi shell -e dev
+```
+
+**NOTE:** make sure to run `pixi` commands from the top level of `cp-42x-dev`.\
+If, for instance, you run it from within the `release/` submodule, which has its\
+own `pixi` setup, you will activate the wrong environment. Once the environment\
+is active, you can `cd` into `release` or wherever else.
 
