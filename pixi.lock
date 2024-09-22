@@ -74,6 +74,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/16/d9/8a15ff67fc27c65939e454512955e1b240ec75cd201d82e115b3b63ef76d/contourpy-1.1.1-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/02/c3/253a89ee03fc9b9682f1541728eb66db7db22148cd94f89ab22528cd1e1b/deprecation-2.1.0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/6c/4a/c3b77fc1a24510b08918b43a473410c0168f6e657118807015f1f1edceea/docopt_ng-0.9.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/22/cd/a6aa959dca619918ccb55023b4cb151949c64d4d5d55b3f4ffd7eee0c6e8/docutils-0.15.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/02/cc/b7e31358aac6ed1ef2bb790a9746ac2c69bcb3c8588b41616914eb106eaf/exceptiongroup-1.2.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c4/88/86aba816dc6cc4a296df93fb00f6b1dc1ba495c235ccb4241f14cc1a5872/fonttools-4.53.1-cp39-cp39-macosx_10_9_universal2.whl
@@ -153,6 +154,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/62/8b/5ba542fa83c90e09eac972fc9baca7a88e7e7ca4b221a89251954019308b/zipp-3.20.2-py3-none-any.whl
       - pypi: ./core
       - pypi: ./cp
+      - pypi: ./release
 packages:
 - kind: pypi
   name: alabaster
@@ -381,6 +383,18 @@ packages:
   requires_python: '>=3.8'
   editable: true
 - kind: pypi
+  name: cellprofiler-release
+  version: 0.1.0
+  path: ./release
+  sha256: 9020978a61840b80ab8aa42db35235e969305184ded6b6c4c30bd47168c6b82f
+  requires_dist:
+  - jinja2>=2.11.2,<3
+  - markupsafe<2.0.1
+  - docopt-ng
+  - setuptools
+  requires_python: '>=3.8'
+  editable: true
+- kind: pypi
   name: centrosome
   version: 1.2.3
   url: https://files.pythonhosted.org/packages/81/ae/fa2cfeb71f0645b52907a0dae73b22f71da32c4cfe77270358525b3e7e4f/centrosome-1.2.3-cp39-cp39-macosx_10_9_x86_64.whl
@@ -472,6 +486,12 @@ packages:
   sha256: a10811591210e1fb0e768a8c25517cabeabcba6f0bf96564f8ff45189f90b14a
   requires_dist:
   - packaging
+- kind: pypi
+  name: docopt-ng
+  version: 0.9.0
+  url: https://files.pythonhosted.org/packages/6c/4a/c3b77fc1a24510b08918b43a473410c0168f6e657118807015f1f1edceea/docopt_ng-0.9.0-py3-none-any.whl
+  sha256: bfe4c8b03f9fca424c24ee0b4ffa84bf7391cb18c29ce0f6a8227a3b01b81ff9
+  requires_python: '>=3.7'
 - kind: pypi
   name: docutils
   version: 0.15.2
