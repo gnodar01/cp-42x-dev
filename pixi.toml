@@ -9,11 +9,11 @@ platforms = ["win-64", "osx-64"]
 # platforms = ["osx-64", "osx-arm64"]
 # platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
-[tasks]
+[feature.mod.tasks]
 cpwd = { cmd = ["python", "-Wd", "-m", "cellprofiler"] }
 cp = { cmd = ["python", "-m", "cellprofiler"] }
 
-[target.osx.tasks]
+[feature.mod.target.osx.tasks]
 cpwd = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 cp = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 
@@ -34,7 +34,9 @@ env = { JAVA_HOME = "%PIXI_PROJECT_ROOT%\\.pixi\\envs\\dev\\Library\\lib\\jvm", 
 env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm", JDK_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm" }
 
 [dependencies]
-setuptools = ">=64.0,<74.0"
+setuptools = "64.*"
+scipy = "1.9.0"
+numpy = ">=1.20.1,<1.25.0"
 
 [target.win-64.dependencies]
 python = "3.8.*"
