@@ -4,7 +4,8 @@ version = "4.2.8"
 description = "Dev environment for CP42x"
 authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
 channels = ["conda-forge"]
-platforms = ["osx-64"]
+# on windows, in git bash: bash --rcfile <(pixi shell-hook -e dev | sed 's/^export Path=/export PATH=/' | tr ';' ':')
+platforms = ["win-64", "osx-64"]
 # platforms = ["osx-64", "osx-arm64"]
 # platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
@@ -16,17 +17,26 @@ cp = { cmd = ["python", "-m", "cellprofiler"] }
 cpwd = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 cp = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 
-[feature.mysql.activation]
+[feature.mysql.target.unix.activation]
 # https://github.com/PyMySQL/mysqlclient/issues/496#issuecomment-1614688099
-env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/default/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/default/lib -lmysqlclient -rpath $PIXI_PROJECT_ROOT/.pixi/envs/default/lib" }
+env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib -lmysqlclient -rpath $PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
 
 # [feature.mysql.target.linux-64.activation]
-# env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/default/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/default/lib" }
+# env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
+
+# usage of `%` or `$` and `\\` or `/` will depend on if using e.g. cmd.exe or git bash or ...
+[feature.java.target.win-64.activation]
+env = { JAVA_HOME = "%PIXI_PROJECT_ROOT%\\.pixi\\envs\\dev\\Library\\lib\\jvm", JDK_HOME = "%PIXI_PROJECT_ROOT%\\.pixi\\envs\\dev\\Library\\lib\\jvm" }
+#env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/Library/lib/jvm", JDK_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/Library/lib/jvm" }
+#env = { JAVA_HOME = "$PIXI_PROJECT_ROOT\\.pixi\\envs\\dev\\Library\\lib\\jvm", JDK_HOME = "$PIXI_PROJECT_ROOT\\.pixi\\envs\\dev\\Library\\lib\\jvm" }
 
 [feature.java.activation]
-env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm" }
+env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm", JDK_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm" }
 
-[dependencies]
+[target.win-64.dependencies]
+python = "3.8.*"
+
+[target.unix.dependencies]
 python = "3.9.*"
 
 [target.osx.dependencies]
@@ -40,6 +50,10 @@ python = "3.9.*"
 
 [feature.mysql.dependencies]
 mysql = "=8.0"
+setuptools = ">=64.0,<74.0"
+
+[feature.mysql.pypi-options]
+no-build-isolation = ["mysqlclient"]
 
 [feature.java.dependencies]
 openjdk = "11.*"
@@ -55,5 +69,5 @@ cellprofiler = { path = "./cp", extras = ["test", "build", "docs"], editable = t
 build = ">=1.2.2, <2"
 
 [environments]
-dev = ["mod", "mysql", "java"]
+dev = ["mysql", "java", "mod"]
 
