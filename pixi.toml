@@ -33,6 +33,9 @@ env = { JAVA_HOME = "%PIXI_PROJECT_ROOT%\\.pixi\\envs\\dev\\Library\\lib\\jvm", 
 [feature.java.activation]
 env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm", JDK_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm" }
 
+[dependencies]
+setuptools = ">=64.0,<74.0"
+
 [target.win-64.dependencies]
 python = "3.8.*"
 
@@ -50,7 +53,6 @@ python = "3.9.*"
 
 [feature.mysql.dependencies]
 mysql = "=8.0"
-setuptools = ">=64.0,<74.0"
 
 [feature.mysql.pypi-options]
 no-build-isolation = ["mysqlclient"]
