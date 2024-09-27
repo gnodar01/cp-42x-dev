@@ -153,14 +153,14 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7f/66/b15ce62552d84bbfcec9a4873ab79d993a1dd4edb922cbfccae192bd5b5f/jaraco.classes-3.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/db/0c52c4cf5e4bd9f5d7135ec7669a3a767af21b3a308e1ed3674881e52b62/jaraco.context-6.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/54/7623e24ffc63730c3a619101361b08860c6b7c7cfc1aef6edb66d80ed708/jaraco.functools-4.0.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/31/b4/b9b800c45527aadd64d5b442f9b932b00648617eb5d63d2c7a6587b7cafc/jmespath-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/83/25/e6d59e5f0a0508d0dca8bb98c7f7fd3772fc943ac3f53d5ab18a218d32c0/keyring-25.4.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4e/45/5a5c46078362cb3882dcacad687c503089263c017ca1241e0483857791eb/kiwisolver-1.4.7-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/d1/5d/c059c180c84f7962db0aeae7c3b9303ed1d73d76f2bfbc32bc231c8be314/macholib-1.16.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/2a/84/7c9025ffed11db2798c804ed30ccdde47344ab2d464e704377b46c103803/mahotas-1.4.18-cp39-cp39-macosx_10_9_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/68/ee/44409a47dc0d273a067fc5661bb8e4ea9b5c82ba4d4e189c99634269967c/MarkupSafe-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/6a/84/be0acd521fa9d6697657cf35878153f8009a42b4b75237aebc302559a8a9/matplotlib-3.7.5-cp39-cp39-macosx_10_12_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/48/7e/3a64597054a70f7c86eb0a7d4fc315b8c1ab932f64883a297bdffeb5f967/more_itertools-10.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d0/97/7326248ac8d5049968bf4ec708a5d3d4806e412a42e74160d7f266a3e03a/mysqlclient-1.4.6.tar.gz
@@ -194,7 +194,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/cd/df/1145dc9389138eb47649806b42aaad5b0ecdfd3e93c7c51c1fffd80a8f90/sentry_sdk-0.18.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/dc/c02e01294f7265e63a7315fe086dd1df7dacb9f840a804da846b96d01b96/snowballstemmer-2.2.0-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/83/74/318d8cd70cbde2164e3035f9e9ba0807e2de7d384e03784ad0afc98b891b/Sphinx-5.1.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/67/a7/01dd6fd9653c056258d65032aa09a615b5d7b07dd840845a9f41a8860fbc/sphinx-5.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ea/46/00fda84467815c29951a9c91e3ae7503c409ddad04373e7cfc78daad4300/sphinx_rtd_theme-2.0.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5d/85/9ebeae2f76e9e77b952f4b274c27238156eae7979c5421fba91a28f4970d/sphinxcontrib_applehelp-2.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/35/7a/987e583882f985fe4d7323774889ec58049171828b58c2217e7f79cdf44e/sphinxcontrib_devhelp-2.0.0-py3-none-any.whl
@@ -272,7 +272,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/xorg-xproto-7.0.31-hcd874cb_1007.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/xz-5.2.6-h8d14728_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.6-h0ea2cb4_0.conda
-      - pypi: https://files.pythonhosted.org/packages/64/88/c7083fc61120ab661c5d0b82cb77079fc1429d3f913a456c1c82cf4658f7/alabaster-0.7.13-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/32/34/d4e1c02d3bee589efb5dfa17f88ea08bdb3e3eac12bc475462aec52ed223/alabaster-0.7.16-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4d/3f/3bc3f1d83f6e4a7fcb834d3720544ca597590425be5ba9db032b2bf322a2/altgraph-0.17.4-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/20/bc79bc575ba2e2a7f70e8a1155618bb1301eaa5132a8271373a6903f73f8/babel-2.16.0-py3-none-any.whl
@@ -280,19 +280,19 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/59/23/ac44973908ea92a7ee36e9da0b056d6cd142ff1f612cd11df2ab8d8e8d74/boto3-1.35.28-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/71/0d/06dc5da2c545edabda06040089119d227133abe828a9119215bc7528aff7/botocore-1.35.28-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/91/fd/e4bda6228637ecae5732162b5ac2a5a822e2ba8e546eb4997cde51b231a3/build-1.2.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e4/97/3fb1a2595b470d36aea9ab3b07ff65b1906b0ec15b0b2eb385ef097e303f/centrosome-1.2.3-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/f4/ab/b9601cc270617eae363e1eecd6931b4be2ed50692ab92245c151b4b3b18b/centrosome-1.2.3.tar.gz
       - pypi: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/db/fb/d29e343e7c57bbf1231275939f6e75eb740cd47a9d7cb2c52ffeb62ef869/charset_normalizer-3.3.2-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/28/76/e6222113b83e3622caa4bb41032d0b1bf785250607392e1b778aca0b8a7d/charset_normalizer-3.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/96/1b/b05cd42c8d21767a0488b883b38658fb9a45f86c293b7b42521a8113dc5d/contourpy-1.1.1-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/b1/7d/087ee4295e7580d3f7eb8a8a4e0ec8c7847e60f34135248ccf831cf5bbfc/contourpy-1.1.1.tar.gz
       - pypi: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/02/c3/253a89ee03fc9b9682f1541728eb66db7db22148cd94f89ab22528cd1e1b/deprecation-2.1.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/6c/4a/c3b77fc1a24510b08918b43a473410c0168f6e657118807015f1f1edceea/docopt_ng-0.9.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/22/cd/a6aa959dca619918ccb55023b4cb151949c64d4d5d55b3f4ffd7eee0c6e8/docutils-0.15.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/02/cc/b7e31358aac6ed1ef2bb790a9746ac2c69bcb3c8588b41616914eb106eaf/exceptiongroup-1.2.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/75/7f/3c4e038998d2a54b282d605f6aaac4c596c49d55add3adc6559a735bb4cb/fonttools-4.54.1-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/57/5e/de2e6e51cb6894f2f2bc2641f6c845561361b622e96df3cca04df77222c9/fonttools-4.54.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/f3/3c/eb154b7ddce6b1f6f4b972074541b943d4f6bc07ebc1724d52694fbe1e02/h5py-3.6.0-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/0a/39/62ec4c1cc96408f6cf27c1d10a26409b98eb6aa2dda7d9c48d204c09b970/h5py-3.6.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/1e/b7/02adac4e42a691008b5cfb31db98c190e1fc348d1521b9be4429f9454ed1/imageio-2.35.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/62/85c4c919272577931d407be5ba5d71c20f0b616d31a0befe0ae45bb79abd/imagesize-1.4.1-py2.py3-none-any.whl
@@ -303,27 +303,27 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/7f/66/b15ce62552d84bbfcec9a4873ab79d993a1dd4edb922cbfccae192bd5b5f/jaraco.classes-3.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/db/0c52c4cf5e4bd9f5d7135ec7669a3a767af21b3a308e1ed3674881e52b62/jaraco.context-6.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/54/7623e24ffc63730c3a619101361b08860c6b7c7cfc1aef6edb66d80ed708/jaraco.functools-4.0.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/31/b4/b9b800c45527aadd64d5b442f9b932b00648617eb5d63d2c7a6587b7cafc/jmespath-1.0.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/91/29/df4b9b42f2be0b623cbd5e2140cafcaa2bef0759a00b7b70104dcfe2fb51/joblib-1.4.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/83/25/e6d59e5f0a0508d0dca8bb98c7f7fd3772fc943ac3f53d5ab18a218d32c0/keyring-25.4.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/52/77/7e04cca2ff1dc6ee6b7654cebe233de72b7a3ec5616501b6f3144fb70740/kiwisolver-1.4.7-cp38-cp38-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/c4/13/d2d60e79d7a4c116379594ccc635a1c5d0dd062a3760134827cd33090aa9/mahotas-1.4.18-cp38-cp38-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/68/95/c6a93ace68d23a6021516621c5273f8607061c53934d9b54a6526af62276/MarkupSafe-2.0.0-cp38-cp38-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/16/51/58b0b9de42fe1e665736d9286f88b5f1556a0e22bed8a71f468231761083/matplotlib-3.7.5-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/85/4d/2255e1c76304cbd60b48cee302b66d1dde4468dc5b1160e4b7cb43778f2a/kiwisolver-1.4.7.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/f6/71/bf99df8458c0ca05cb9a16f400e66c09b37b15ea124aaa3becb577555cc5/mahotas-1.4.18.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/87/5b/aae44c6655f3801e81aa3eef09dbbf012431987ba564d7231722f68df02d/MarkupSafe-2.1.5.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/b6/f0/3836719cc3982fbba3b840d18a59db1d0ee9ac7986f24e8c0a092851b67b/matplotlib-3.7.5.tar.gz
       - pypi: https://files.pythonhosted.org/packages/48/7e/3a64597054a70f7c86eb0a7d4fc315b8c1ab932f64883a297bdffeb5f967/more_itertools-10.5.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/a8/c4/2c4befb6f78f7b05ad4b1ea725a878738c7908285730838c5e6925eabf89/mysqlclient-1.4.6-cp38-cp38-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/a8/05/9d4f9b78ead6b2661d6e8ea772e111fc4a9fbd866ad0c81906c11206b55e/networkx-3.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/d0/97/7326248ac8d5049968bf4ec708a5d3d4806e412a42e74160d7f266a3e03a/mysqlclient-1.4.6.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/d5/f0/8fbc882ca80cf077f1b246c0e3c3465f7f415439bdea6b899f6b19f61f70/networkx-3.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/26/8d/53c5b19c4999bdc6ba95f246f4ef35ca83d7d7423e5e38be43ad66544e5d/nh3-0.2.18-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/54/16/12b82f791c7f50ddec566873d5bdd245baa1491bac11d15ffb98aecc8f8b/pefile-2024.8.26-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/f2/75/3cb820b2812405fc7feb3d0deb701ef0c3de93dc02597115e00704591bc9/pillow-10.4.0-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/cd/74/ad3d526f3bf7b6d3f408b73fde271ec69dfac8b81341a318ce825f2b3812/pillow-10.4.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/c0/38/d617739840a2f576e400f03fea0a75703f93cc274002635b4b998bbb9de4/pkginfo-1.11.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/88/5f/e351af9a41f866ac3f1fac4ca0613908d9a41741cfcf2228f4ad853b697d/pluggy-1.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/40/2f/e862d428c5e475faf22b0a8d12a3359b694bc49e54bc2a4fa95b6cca1aef/prokaryote-2.4.4.tar.gz
       - pypi: https://files.pythonhosted.org/packages/73/44/561092313ae925f3acfaace6f9ddc4f6a9c748704317bad9c8c8f8a36a79/psutil-6.0.0-cp37-abi3-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/df/e4/ba44652d562cbf0bf320e0f3810206149c8a4e99cdbf66da82e97ab53a15/pydantic-2.9.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/db/c8/e6ed2172bb2594a256c7756a70109fa31ab80d1cebb9003ad6c54e10c0d1/pydantic_core-2.23.4-cp38-none-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/e2/aa/6b6a9b9f8537b872f552ddd46dd3da230367754b6f707b8e1e963f515ea3/pydantic_core-2.23.4.tar.gz
       - pypi: https://files.pythonhosted.org/packages/f7/3f/01c8b82017c199075f8f788d0d906b9ffbbc5a47dc9918a945e13d5a2bda/pygments-2.18.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c2/13/fe1ea2fb379a4ea86fa38c224b853b94227246840484feccbb4f2fded615/pyinstaller-6.10.0-py3-none-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/a0/8f/a7eb7b85ea2015d1c9a8c1686eaeb61f3ce35e1047fc03c0ac71d22d68f2/pyinstaller_hooks_contrib-2024.8-py3-none-any.whl
@@ -334,27 +334,27 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5b/e2/3bf9afe20d16ea603c67de9d1af1be2eafeaf15c9c11e65770fd17ccd28e/python_javabridge-4.0.4.tar.gz
       - pypi: https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/a9/8f/f80ff31e73385b886c35fb9fb1377849f9c43a3c1195ed8dc8ed8dc1bd88/PyWavelets-1.4.1-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/6e/d4/008dceeb95fafcf141f39393bdfc10921d0b62a325c2794ac533195a1eb3/PyWavelets-1.4.1.tar.gz
       - pypi: https://files.pythonhosted.org/packages/de/3d/8161f7711c017e01ac9f008dfddd9410dff3674334c233bde66e7ba65bbf/pywin32_ctypes-0.2.3-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/6a/ce/339c8e3adf7bb8c848f4b795d7b022ca05b12644a09c8f9a5e667df0301c/pyzmq-22.3.0-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/6c/95/d37e7db364d7f569e71068882b1848800f221c58026670e93a4c6d50efe7/pyzmq-22.3.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/45/be/3ea20dc38b9db08387cf97997a85a7d51527ea2057d71118feb0aa8afa55/readme_renderer-43.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3f/51/d4db610ef29373b879047326cbf6fa98b6c1969d6f6dc423279de2b1be2c/requests_toolbelt-1.0.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3c/4a/b221409913760d26cf4498b7b1741d510c82d3ad38381984a3ddc135ec66/s3transfer-0.10.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/f2/ae/8a1d2745eb17919690fea58df1e42746a254bdb4d3682c621881117076ff/scikit_image-0.18.3-cp38-cp38-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/9a/ff/5951e53ffed8d0fdb958883bd8a49b050f07c9b0c96a643607006bf690fe/scikit_learn-0.24.2-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/c0/f2/8653713d01c46ed679f37848528adae1e988e1120f16fa589b200cca1720/scikit-image-0.18.3.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/05/04/507280f20fafc8bc94b41e0592938c6f4a910d0e066be7c8ff1299628f5d/scikit-learn-0.24.2.tar.gz
       - pypi: https://files.pythonhosted.org/packages/cd/df/1145dc9389138eb47649806b42aaad5b0ecdfd3e93c7c51c1fffd80a8f90/sentry_sdk-0.18.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/dc/c02e01294f7265e63a7315fe086dd1df7dacb9f840a804da846b96d01b96/snowballstemmer-2.2.0-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/83/74/318d8cd70cbde2164e3035f9e9ba0807e2de7d384e03784ad0afc98b891b/Sphinx-5.1.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/67/a7/01dd6fd9653c056258d65032aa09a615b5d7b07dd840845a9f41a8860fbc/sphinx-5.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ea/46/00fda84467815c29951a9c91e3ae7503c409ddad04373e7cfc78daad4300/sphinx_rtd_theme-2.0.0-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/06/c1/5e2cafbd03105ce50d8500f9b4e8a6e8d02e22d0475b574c3b3e9451a15f/sphinxcontrib_applehelp-1.0.4-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/c5/09/5de5ed43a521387f18bdf5f5af31d099605c992fd25372b2b9b825ce48ee/sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/6e/ee/a1f5e39046cbb5f8bc8fba87d1ddf1c6643fbc9194e58d26e606de4b9074/sphinxcontrib_htmlhelp-2.0.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/5d/85/9ebeae2f76e9e77b952f4b274c27238156eae7979c5421fba91a28f4970d/sphinxcontrib_applehelp-2.0.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/35/7a/987e583882f985fe4d7323774889ec58049171828b58c2217e7f79cdf44e/sphinxcontrib_devhelp-2.0.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/0a/7b/18a8c0bcec9182c05a0b3ec2a776bba4ead82750a55ff798e8d406dae604/sphinxcontrib_htmlhelp-2.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/76/85/749bd22d1a68db7291c89e2ebca53f4306c3f205853cf31e9de279034c3c/sphinxcontrib_jquery-4.1-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c2/42/4c8646762ee83602e3fb3fbe774c2fac12f317deb0b5dbeeedd2d3ba4b77/sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/2b/14/05f9206cf4e9cfca1afb5fd224c7cd434dcc3a433d6d9e4e0264d29c6cdb/sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/c6/77/5464ec50dd0f1c1037e3c93249b040c8fc8078fdda97530eeb02424b6eea/sphinxcontrib_serializinghtml-1.1.5-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/27/83/859ecdd180cacc13b1f7e857abf8582a64552ea7a061057a6c716e790fce/sphinxcontrib_qthelp-2.0.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/52/a7/d2782e4e3f77c8450f727ba74a8f12756d5ba823d81b941f1b04da9d033a/sphinxcontrib_serializinghtml-2.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4b/2c/ffbf7a134b9ab11a67b0cf0726453cedd9c5043a4fe7a35d1cefa9a1bcfb/threadpoolctl-3.5.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/49/5e/4670f23f4234a1d4dbf6722e2b265ce2efeef334ff3d1d3b725c8d1ca29e/tifffile-2022.4.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
@@ -362,18 +362,12 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/99/94/08b3b933c611416dad89c8abcc94a6d6c29e8609987235b6e7f10b42de82/twine-3.1.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/cf/8435d5a7159e2a9c83a95896ed596f68cf798005fe107cc655b5c5c14704/urllib3-1.26.20-py2.py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/78/ff/ab0dce2bb452b3d492605f19bd8512d476da6f7c1f8456170a3da20a2466/wxPython-4.2.2-cp38-cp38-win_amd64.whl
+      - pypi: https://files.pythonhosted.org/packages/a4/f5/8c272764770f47fd419cc2eff4c4fa1c0681c71bcc2f3158b3a83d1339ff/wxPython-4.2.2.tar.gz
       - pypi: https://files.pythonhosted.org/packages/62/8b/5ba542fa83c90e09eac972fc9baca7a88e7e7ca4b221a89251954019308b/zipp-3.20.2-py3-none-any.whl
       - pypi: ./core
       - pypi: ./cp
       - pypi: ./release
 packages:
-- kind: pypi
-  name: alabaster
-  version: 0.7.13
-  url: https://files.pythonhosted.org/packages/64/88/c7083fc61120ab661c5d0b82cb77079fc1429d3f913a456c1c82cf4658f7/alabaster-0.7.13-py3-none-any.whl
-  sha256: 1ee19aca801bbabb5ba3f5f258e4422dfa86f82f3e9cefb0859b283cdd7f62a3
-  requires_python: '>=3.6'
 - kind: pypi
   name: alabaster
   version: 0.7.16
@@ -543,7 +537,7 @@ packages:
   name: cellprofiler
   version: 4.2.8
   path: ./cp
-  sha256: 60fc6f91e76c50e90ce3cf595623acf109f1c30659e8e83e050bcf672521ec08
+  sha256: 4870840288c58ac56c940a1a49c6a6d9a51e35c9c4b23ea04532136c4b68bd73
   requires_dist:
   - boto3>=1.12.28
   - cellprofiler-core==4.2.8
@@ -552,7 +546,7 @@ packages:
   - h5py<4,~=3.6.0
   - imageio>=2.5
   - inflect<7,>=2.1
-  - jinja2<3,>=2.11.2
+  - jinja2>=2.11.2
   - joblib>=0.13
   - mahotas>=1.4
   - matplotlib<4,>=3.1.3
@@ -575,7 +569,6 @@ packages:
   - twine ; extra == 'build'
   - sphinx>=3.1.1 ; extra == 'docs'
   - sphinx-rtd-theme>=0.5.0 ; extra == 'docs'
-  - markupsafe<2.0.1 ; extra == 'docs'
   - pytest~=7.4.1 ; extra == 'test'
   requires_python: '>=3.8'
   editable: true
@@ -583,7 +576,7 @@ packages:
   name: cellprofiler
   version: 4.2.8
   path: ./cp
-  sha256: 60fc6f91e76c50e90ce3cf595623acf109f1c30659e8e83e050bcf672521ec08
+  sha256: 4870840288c58ac56c940a1a49c6a6d9a51e35c9c4b23ea04532136c4b68bd73
   requires_dist:
   - boto3>=1.12.28
   - cellprofiler-core==4.2.8
@@ -592,7 +585,7 @@ packages:
   - h5py<4,~=3.6.0
   - imageio>=2.5
   - inflect<7,>=2.1
-  - jinja2<3,>=2.11.2
+  - jinja2>=2.11.2
   - joblib>=0.13
   - mahotas>=1.4
   - matplotlib<4,>=3.1.3
@@ -615,7 +608,6 @@ packages:
   - twine ; extra == 'build'
   - sphinx>=3.1.1 ; extra == 'docs'
   - sphinx-rtd-theme>=0.5.0 ; extra == 'docs'
-  - markupsafe<2.0.1 ; extra == 'docs'
   - pytest~=7.4.1 ; extra == 'test'
   requires_python: '>=3.8'
   editable: true
@@ -648,10 +640,9 @@ packages:
   name: cellprofiler-release
   version: 0.1.0
   path: ./release
-  sha256: a6508f8a68766952a9735f2acf104d78d04fdeb9af3bed4cfb525742dbda5609
+  sha256: 943155711421604a6a706cf0f97104d813cb6903d136916b94c49fd4fc50b4da
   requires_dist:
-  - jinja2>=2.11.2,<3
-  - markupsafe<2.0.1
+  - jinja2
   - docopt-ng
   - setuptools
   requires_python: '>=3.8'
@@ -660,10 +651,9 @@ packages:
   name: cellprofiler-release
   version: 0.1.0
   path: ./release
-  sha256: a6508f8a68766952a9735f2acf104d78d04fdeb9af3bed4cfb525742dbda5609
+  sha256: 943155711421604a6a706cf0f97104d813cb6903d136916b94c49fd4fc50b4da
   requires_dist:
-  - jinja2>=2.11.2,<3
-  - markupsafe<2.0.1
+  - jinja2
   - docopt-ng
   - setuptools
   requires_python: '>=3.8'
@@ -687,8 +677,8 @@ packages:
 - kind: pypi
   name: centrosome
   version: 1.2.3
-  url: https://files.pythonhosted.org/packages/e4/97/3fb1a2595b470d36aea9ab3b07ff65b1906b0ec15b0b2eb385ef097e303f/centrosome-1.2.3-cp38-cp38-win_amd64.whl
-  sha256: 1b3eaa32d328b46bc407ee2717133000c2e6e9bee5c18a23ddccbb43e08f0527
+  url: https://files.pythonhosted.org/packages/f4/ab/b9601cc270617eae363e1eecd6931b4be2ed50692ab92245c151b4b3b18b/centrosome-1.2.3.tar.gz
+  sha256: 0e1091e3fb96b5aaef1246e5f465c0742aa822cbb1279741b9724215f9bf70e9
   requires_dist:
   - deprecation
   - matplotlib<3.8,>=3.1.3
@@ -709,14 +699,14 @@ packages:
 - kind: pypi
   name: charset-normalizer
   version: 3.3.2
-  url: https://files.pythonhosted.org/packages/66/fe/c7d3da40a66a6bf2920cce0f436fa1f62ee28aaf92f412f0bf3b84c8ad6c/charset_normalizer-3.3.2-cp39-cp39-macosx_10_9_x86_64.whl
-  sha256: 5b4c145409bef602a690e7cfad0a15a55c13320ff7a3ad7ca59c13bb8ba4d45d
+  url: https://files.pythonhosted.org/packages/28/76/e6222113b83e3622caa4bb41032d0b1bf785250607392e1b778aca0b8a7d/charset_normalizer-3.3.2-py3-none-any.whl
+  sha256: 3e4d1f6587322d2788836a99c69062fbb091331ec940e02d12d179c1d53e25fc
   requires_python: '>=3.7.0'
 - kind: pypi
   name: charset-normalizer
   version: 3.3.2
-  url: https://files.pythonhosted.org/packages/db/fb/d29e343e7c57bbf1231275939f6e75eb740cd47a9d7cb2c52ffeb62ef869/charset_normalizer-3.3.2-cp38-cp38-win_amd64.whl
-  sha256: eb8821e09e916165e160797a6c17edda0679379a4be5c716c260e836e122f54b
+  url: https://files.pythonhosted.org/packages/66/fe/c7d3da40a66a6bf2920cce0f436fa1f62ee28aaf92f412f0bf3b84c8ad6c/charset_normalizer-3.3.2-cp39-cp39-macosx_10_9_x86_64.whl
+  sha256: 5b4c145409bef602a690e7cfad0a15a55c13320ff7a3ad7ca59c13bb8ba4d45d
   requires_python: '>=3.7.0'
 - kind: pypi
   name: colorama
@@ -751,8 +741,8 @@ packages:
 - kind: pypi
   name: contourpy
   version: 1.1.1
-  url: https://files.pythonhosted.org/packages/96/1b/b05cd42c8d21767a0488b883b38658fb9a45f86c293b7b42521a8113dc5d/contourpy-1.1.1-cp38-cp38-win_amd64.whl
-  sha256: 498e53573e8b94b1caeb9e62d7c2d053c263ebb6aa259c81050766beb50ff8d9
+  url: https://files.pythonhosted.org/packages/b1/7d/087ee4295e7580d3f7eb8a8a4e0ec8c7847e60f34135248ccf831cf5bbfc/contourpy-1.1.1.tar.gz
+  sha256: 96ba37c2e24b7212a77da85004c38e7c4d155d3e72a45eeaf22c1f03f607e8ab
   requires_dist:
   - numpy<2.0,>=1.16 ; python_full_version < '3.12'
   - numpy<2.0,>=1.26.0rc1 ; python_full_version >= '3.12'
@@ -835,8 +825,8 @@ packages:
 - kind: pypi
   name: fonttools
   version: 4.54.1
-  url: https://files.pythonhosted.org/packages/75/7f/3c4e038998d2a54b282d605f6aaac4c596c49d55add3adc6559a735bb4cb/fonttools-4.54.1-cp38-cp38-win_amd64.whl
-  sha256: ada215fd079e23e060157aab12eba0d66704316547f334eee9ff26f8c0d7b8ab
+  url: https://files.pythonhosted.org/packages/57/5e/de2e6e51cb6894f2f2bc2641f6c845561361b622e96df3cca04df77222c9/fonttools-4.54.1-py3-none-any.whl
+  sha256: 37cddd62d83dc4f72f7c3f3c2bcf2697e89a30efb152079896544a93907733bd
   requires_dist:
   - fs<3,>=2.2.0 ; extra == 'all'
   - lxml>=4.0 ; extra == 'all'
@@ -915,8 +905,8 @@ packages:
 - kind: pypi
   name: h5py
   version: 3.6.0
-  url: https://files.pythonhosted.org/packages/d9/4b/65a107682a5df28e4deb1d17d53c980bdae0ce30325c005262bad351c8d3/h5py-3.6.0-cp39-cp39-macosx_10_9_x86_64.whl
-  sha256: d8cacad89aa7daf3626fce106f7f2662ac35b14849df22d252d0d8fab9dc1c0b
+  url: https://files.pythonhosted.org/packages/0a/39/62ec4c1cc96408f6cf27c1d10a26409b98eb6aa2dda7d9c48d204c09b970/h5py-3.6.0.tar.gz
+  sha256: 8752d2814a92aba4e2b2a5922d2782d0029102d99caaf3c201a566bc0b40db29
   requires_dist:
   - numpy>=1.14.5
   - cached-property ; python_full_version < '3.8'
@@ -924,8 +914,8 @@ packages:
 - kind: pypi
   name: h5py
   version: 3.6.0
-  url: https://files.pythonhosted.org/packages/f3/3c/eb154b7ddce6b1f6f4b972074541b943d4f6bc07ebc1724d52694fbe1e02/h5py-3.6.0-cp38-cp38-win_amd64.whl
-  sha256: 8ecedf16c613973622a334701f67edcc0249469f9daa0576e994fb20ac0405db
+  url: https://files.pythonhosted.org/packages/d9/4b/65a107682a5df28e4deb1d17d53c980bdae0ce30325c005262bad351c8d3/h5py-3.6.0-cp39-cp39-macosx_10_9_x86_64.whl
+  sha256: d8cacad89aa7daf3626fce106f7f2662ac35b14849df22d252d0d8fab9dc1c0b
   requires_dist:
   - numpy>=1.14.5
   - cached-property ; python_full_version < '3.8'
@@ -1195,13 +1185,13 @@ packages:
   requires_python: '>=3.8'
 - kind: pypi
   name: jinja2
-  version: 2.11.3
-  url: https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl
-  sha256: 03e47ad063331dd6a3f04a43eddca8a966a26ba0c5b7207a9a9e4e08f1b29419
+  version: 3.1.4
+  url: https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl
+  sha256: bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d
   requires_dist:
-  - markupsafe>=0.23
-  - babel>=0.8 ; extra == 'i18n'
-  requires_python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*'
+  - markupsafe>=2.0
+  - babel>=2.7 ; extra == 'i18n'
+  requires_python: '>=3.7'
 - kind: pypi
   name: jmespath
   version: 1.0.1
@@ -1255,8 +1245,8 @@ packages:
 - kind: pypi
   name: kiwisolver
   version: 1.4.7
-  url: https://files.pythonhosted.org/packages/52/77/7e04cca2ff1dc6ee6b7654cebe233de72b7a3ec5616501b6f3144fb70740/kiwisolver-1.4.7-cp38-cp38-win_amd64.whl
-  sha256: d83db7cde68459fc803052a55ace60bea2bae361fc3b7a6d5da07e11954e4b09
+  url: https://files.pythonhosted.org/packages/85/4d/2255e1c76304cbd60b48cee302b66d1dde4468dc5b1160e4b7cb43778f2a/kiwisolver-1.4.7.tar.gz
+  sha256: 9893ff81bd7107f7b685d3017cc6583daadb4fc26e4a888350df530e41980a60
   requires_python: '>=3.8'
 - kind: conda
   name: krb5
@@ -1957,8 +1947,8 @@ packages:
 - kind: pypi
   name: mahotas
   version: 1.4.18
-  url: https://files.pythonhosted.org/packages/c4/13/d2d60e79d7a4c116379594ccc635a1c5d0dd062a3760134827cd33090aa9/mahotas-1.4.18-cp38-cp38-win_amd64.whl
-  sha256: b5325a1774cf9d1d45d0492339ca8df34ee61d42d41ee12b988b6de41ef48338
+  url: https://files.pythonhosted.org/packages/f6/71/bf99df8458c0ca05cb9a16f400e66c09b37b15ea124aaa3becb577555cc5/mahotas-1.4.18.tar.gz
+  sha256: e6bd2eea4143a24f381b30c64078503cd8ffa20ca493e39ffa29f9d024d9cf8b
   requires_dist:
   - numpy
   - matplotlib ; extra == 'tests'
@@ -1969,21 +1959,21 @@ packages:
   - pillow ; extra == 'tests'
 - kind: pypi
   name: markupsafe
-  version: 2.0.0
-  url: https://files.pythonhosted.org/packages/68/95/c6a93ace68d23a6021516621c5273f8607061c53934d9b54a6526af62276/MarkupSafe-2.0.0-cp38-cp38-win_amd64.whl
-  sha256: 58bc9fce3e1557d463ef5cee05391a05745fd95ed660f23c1742c711712c0abb
-  requires_python: '>=3.6'
+  version: 2.1.5
+  url: https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl
+  sha256: db0b55e0f3cc0be60c1f19efdde9a637c32740486004f20d1cff53c3c0ece4d2
+  requires_python: '>=3.7'
 - kind: pypi
   name: markupsafe
-  version: 2.0.0
-  url: https://files.pythonhosted.org/packages/68/ee/44409a47dc0d273a067fc5661bb8e4ea9b5c82ba4d4e189c99634269967c/MarkupSafe-2.0.0-cp39-cp39-macosx_10_9_x86_64.whl
-  sha256: dab0c685f21f4a6c95bfc2afd1e7eae0033b403dd3d8c1b6d13a652ada75b348
-  requires_python: '>=3.6'
+  version: 2.1.5
+  url: https://files.pythonhosted.org/packages/87/5b/aae44c6655f3801e81aa3eef09dbbf012431987ba564d7231722f68df02d/MarkupSafe-2.1.5.tar.gz
+  sha256: d283d37a890ba4c1ae73ffadf8046435c76e7bc2247bbb63c00bd1a709c6544b
+  requires_python: '>=3.7'
 - kind: pypi
   name: matplotlib
   version: 3.7.5
-  url: https://files.pythonhosted.org/packages/16/51/58b0b9de42fe1e665736d9286f88b5f1556a0e22bed8a71f468231761083/matplotlib-3.7.5-cp38-cp38-win_amd64.whl
-  sha256: f0b60993ed3488b4532ec6b697059897891927cbfc2b8d458a891b60ec03d9d7
+  url: https://files.pythonhosted.org/packages/6a/84/be0acd521fa9d6697657cf35878153f8009a42b4b75237aebc302559a8a9/matplotlib-3.7.5-cp39-cp39-macosx_10_12_x86_64.whl
+  sha256: 9fc6fcfbc55cd719bc0bfa60bde248eb68cf43876d4c22864603bdd23962ba25
   requires_dist:
   - contourpy>=1.0.1
   - cycler>=0.10
@@ -1999,8 +1989,8 @@ packages:
 - kind: pypi
   name: matplotlib
   version: 3.7.5
-  url: https://files.pythonhosted.org/packages/6a/84/be0acd521fa9d6697657cf35878153f8009a42b4b75237aebc302559a8a9/matplotlib-3.7.5-cp39-cp39-macosx_10_12_x86_64.whl
-  sha256: 9fc6fcfbc55cd719bc0bfa60bde248eb68cf43876d4c22864603bdd23962ba25
+  url: https://files.pythonhosted.org/packages/b6/f0/3836719cc3982fbba3b840d18a59db1d0ee9ac7986f24e8c0a092851b67b/matplotlib-3.7.5.tar.gz
+  sha256: 1e5c971558ebc811aa07f54c7b7c677d78aa518ef4c390e14673a09e0860184a
   requires_dist:
   - contourpy>=1.0.1
   - cycler>=0.10
@@ -2318,11 +2308,6 @@ packages:
 - kind: pypi
   name: mysqlclient
   version: 1.4.6
-  url: https://files.pythonhosted.org/packages/a8/c4/2c4befb6f78f7b05ad4b1ea725a878738c7908285730838c5e6925eabf89/mysqlclient-1.4.6-cp38-cp38-win_amd64.whl
-  sha256: f646f8d17d02be0872291f258cce3813497bc7888cd4712a577fd1e719b2f213
-- kind: pypi
-  name: mysqlclient
-  version: 1.4.6
   url: https://files.pythonhosted.org/packages/d0/97/7326248ac8d5049968bf4ec708a5d3d4806e412a42e74160d7f266a3e03a/mysqlclient-1.4.6.tar.gz
   sha256: f3fdaa9a38752a3b214a6fe79d7cae3653731a53e577821f9187e67cbecb2e16
 - kind: conda
@@ -2340,33 +2325,6 @@ packages:
   purls: []
   size: 822066
   timestamp: 1724658603042
-- kind: pypi
-  name: networkx
-  version: '3.1'
-  url: https://files.pythonhosted.org/packages/a8/05/9d4f9b78ead6b2661d6e8ea772e111fc4a9fbd866ad0c81906c11206b55e/networkx-3.1-py3-none-any.whl
-  sha256: 4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36
-  requires_dist:
-  - numpy>=1.20 ; extra == 'default'
-  - scipy>=1.8 ; extra == 'default'
-  - matplotlib>=3.4 ; extra == 'default'
-  - pandas>=1.3 ; extra == 'default'
-  - pre-commit>=3.2 ; extra == 'developer'
-  - mypy>=1.1 ; extra == 'developer'
-  - sphinx>=6.1 ; extra == 'doc'
-  - pydata-sphinx-theme>=0.13 ; extra == 'doc'
-  - sphinx-gallery>=0.12 ; extra == 'doc'
-  - numpydoc>=1.5 ; extra == 'doc'
-  - pillow>=9.4 ; extra == 'doc'
-  - nb2plots>=0.6 ; extra == 'doc'
-  - texext>=0.6.7 ; extra == 'doc'
-  - lxml>=4.6 ; extra == 'extra'
-  - pygraphviz>=1.10 ; extra == 'extra'
-  - pydot>=1.4.2 ; extra == 'extra'
-  - sympy>=1.10 ; extra == 'extra'
-  - pytest>=7.2 ; extra == 'test'
-  - pytest-cov>=4.0 ; extra == 'test'
-  - codecov>=2.1 ; extra == 'test'
-  requires_python: '>=3.8'
 - kind: pypi
   name: networkx
   version: 3.2.1
@@ -2562,8 +2520,8 @@ packages:
 - kind: pypi
   name: pillow
   version: 10.4.0
-  url: https://files.pythonhosted.org/packages/f2/75/3cb820b2812405fc7feb3d0deb701ef0c3de93dc02597115e00704591bc9/pillow-10.4.0-cp38-cp38-win_amd64.whl
-  sha256: 5161eef006d335e46895297f642341111945e2c1c899eb406882a6c61a4357ab
+  url: https://files.pythonhosted.org/packages/cd/74/ad3d526f3bf7b6d3f408b73fde271ec69dfac8b81341a318ce825f2b3812/pillow-10.4.0.tar.gz
+  sha256: 166c1cd4d24309b30d61f79f4a9114b7b2313d7450912277855ff5dfd7cd4a06
   requires_dist:
   - furo ; extra == 'docs'
   - olefile ; extra == 'docs'
@@ -2692,8 +2650,8 @@ packages:
 - kind: pypi
   name: pydantic-core
   version: 2.23.4
-  url: https://files.pythonhosted.org/packages/db/c8/e6ed2172bb2594a256c7756a70109fa31ab80d1cebb9003ad6c54e10c0d1/pydantic_core-2.23.4-cp38-none-win_amd64.whl
-  sha256: 5f5ff8d839f4566a474a969508fe1c5e59c31c80d9e140566f9a37bba7b8d556
+  url: https://files.pythonhosted.org/packages/e2/aa/6b6a9b9f8537b872f552ddd46dd3da230367754b6f707b8e1e963f515ea3/pydantic_core-2.23.4.tar.gz
+  sha256: 2584f7cf844ac4d970fba483a717dbe10c1c1c96a969bf65d61ffe94df1b2863
   requires_dist:
   - typing-extensions>=4.6.0,!=4.7.0
   requires_python: '>=3.8'
@@ -2926,16 +2884,16 @@ packages:
 - kind: pypi
   name: pywavelets
   version: 1.4.1
-  url: https://files.pythonhosted.org/packages/9f/67/33b37d53da9d225301e30894db5083569aa670b446253b3906fc0e96119e/PyWavelets-1.4.1-cp39-cp39-macosx_10_13_x86_64.whl
-  sha256: 23bafd60350b2b868076d976bdd92f950b3944f119b4754b1d7ff22b7acbf6c6
+  url: https://files.pythonhosted.org/packages/6e/d4/008dceeb95fafcf141f39393bdfc10921d0b62a325c2794ac533195a1eb3/PyWavelets-1.4.1.tar.gz
+  sha256: 6437af3ddf083118c26d8f97ab43b0724b956c9f958e9ea788659f6a2834ba93
   requires_dist:
   - numpy>=1.17.3
   requires_python: '>=3.8'
 - kind: pypi
   name: pywavelets
   version: 1.4.1
-  url: https://files.pythonhosted.org/packages/a9/8f/f80ff31e73385b886c35fb9fb1377849f9c43a3c1195ed8dc8ed8dc1bd88/PyWavelets-1.4.1-cp38-cp38-win_amd64.whl
-  sha256: 7ab8d9db0fe549ab2ee0bea61f614e658dd2df419d5b75fba47baa761e95f8f2
+  url: https://files.pythonhosted.org/packages/9f/67/33b37d53da9d225301e30894db5083569aa670b446253b3906fc0e96119e/PyWavelets-1.4.1-cp39-cp39-macosx_10_13_x86_64.whl
+  sha256: 23bafd60350b2b868076d976bdd92f950b3944f119b4754b1d7ff22b7acbf6c6
   requires_dist:
   - numpy>=1.17.3
   requires_python: '>=3.8'
@@ -2957,8 +2915,8 @@ packages:
 - kind: pypi
   name: pyzmq
   version: 22.3.0
-  url: https://files.pythonhosted.org/packages/6a/ce/339c8e3adf7bb8c848f4b795d7b022ca05b12644a09c8f9a5e667df0301c/pyzmq-22.3.0-cp38-cp38-win_amd64.whl
-  sha256: f762442bab706fd874064ca218b33a1d8e40d4938e96c24dafd9b12e28017f45
+  url: https://files.pythonhosted.org/packages/6c/95/d37e7db364d7f569e71068882b1848800f221c58026670e93a4c6d50efe7/pyzmq-22.3.0.tar.gz
+  sha256: 8eddc033e716f8c91c6a2112f0a8ebc5e00532b4a6ae1eb0ccc48e027f9c671c
   requires_dist:
   - py ; implementation_name == 'pypy'
   - cffi ; implementation_name == 'pypy'
@@ -3069,8 +3027,8 @@ packages:
 - kind: pypi
   name: scikit-image
   version: 0.18.3
-  url: https://files.pythonhosted.org/packages/f2/ae/8a1d2745eb17919690fea58df1e42746a254bdb4d3682c621881117076ff/scikit_image-0.18.3-cp38-cp38-win_amd64.whl
-  sha256: 3f3aa984638a6868171d176d26d6bd17b7b16a9fd505eaa97482f00a4310e3ff
+  url: https://files.pythonhosted.org/packages/c0/f2/8653713d01c46ed679f37848528adae1e988e1120f16fa589b200cca1720/scikit-image-0.18.3.tar.gz
+  sha256: ecae99f93f4c5e9b1bf34959f4dc596c41f2f6b2fc407d9d9ddf85aebd3137ca
   requires_dist:
   - numpy>=1.16.5
   - scipy>=1.0.1
@@ -3115,8 +3073,8 @@ packages:
 - kind: pypi
   name: scikit-learn
   version: 0.24.2
-  url: https://files.pythonhosted.org/packages/9a/ff/5951e53ffed8d0fdb958883bd8a49b050f07c9b0c96a643607006bf690fe/scikit_learn-0.24.2-cp38-cp38-win_amd64.whl
-  sha256: 038f4e9d6ef10e1f3fe82addc3a14735c299866eb10f2c77c090410904828312
+  url: https://files.pythonhosted.org/packages/05/04/507280f20fafc8bc94b41e0592938c6f4a910d0e066be7c8ff1299628f5d/scikit-learn-0.24.2.tar.gz
+  sha256: d14701a12417930392cd3898e9646cf5670c190b933625ebe7511b1f7d7b8736
   requires_dist:
   - numpy>=1.13.3
   - scipy>=0.19.1
@@ -3308,9 +3266,9 @@ packages:
   sha256: c8e1716e83cc398ae16824e5572ae04e0d9fc2c6b985fb0f900f5f0c96ecba1a
 - kind: pypi
   name: sphinx
-  version: 5.1.1
-  url: https://files.pythonhosted.org/packages/83/74/318d8cd70cbde2164e3035f9e9ba0807e2de7d384e03784ad0afc98b891b/Sphinx-5.1.1-py3-none-any.whl
-  sha256: 309a8da80cb6da9f4713438e5b55861877d5d7976b69d87e336733637ea12693
+  version: 5.3.0
+  url: https://files.pythonhosted.org/packages/67/a7/01dd6fd9653c056258d65032aa09a615b5d7b07dd840845a9f41a8860fbc/sphinx-5.3.0-py3-none-any.whl
+  sha256: 060ca5c9f7ba57a08a1219e547b269fadf125ae25b06b9fa7f66768efb652d6d
   requires_dist:
   - sphinxcontrib-applehelp
   - sphinxcontrib-devhelp
@@ -3318,31 +3276,32 @@ packages:
   - sphinxcontrib-htmlhelp>=2.0.0
   - sphinxcontrib-serializinghtml>=1.1.5
   - sphinxcontrib-qthelp
-  - jinja2>=2.3
-  - pygments>=2.0
-  - docutils<0.20,>=0.14
-  - snowballstemmer>=1.1
-  - babel>=1.3
-  - alabaster<0.8,>=0.7
-  - imagesize
+  - jinja2>=3.0
+  - pygments>=2.12
+  - docutils>=0.14,<0.20
+  - snowballstemmer>=2.0
+  - babel>=2.9
+  - alabaster>=0.7,<0.8
+  - imagesize>=1.3
   - requests>=2.5.0
-  - packaging
-  - importlib-metadata>=4.4 ; python_full_version < '3.10'
-  - colorama>=0.3.5 ; sys_platform == 'win32'
+  - packaging>=21.0
+  - importlib-metadata>=4.8 ; python_full_version < '3.10'
+  - colorama>=0.4.5 ; sys_platform == 'win32'
   - sphinxcontrib-websupport ; extra == 'docs'
   - flake8>=3.5.0 ; extra == 'lint'
   - flake8-comprehensions ; extra == 'lint'
   - flake8-bugbear ; extra == 'lint'
+  - flake8-simplify ; extra == 'lint'
   - isort ; extra == 'lint'
-  - mypy>=0.971 ; extra == 'lint'
+  - mypy>=0.981 ; extra == 'lint'
   - sphinx-lint ; extra == 'lint'
   - docutils-stubs ; extra == 'lint'
   - types-typed-ast ; extra == 'lint'
   - types-requests ; extra == 'lint'
   - pytest>=4.6 ; extra == 'test'
   - html5lib ; extra == 'test'
-  - cython ; extra == 'test'
   - typed-ast ; python_full_version < '3.8' and extra == 'test'
+  - cython ; extra == 'test'
   requires_python: '>=3.6'
 - kind: pypi
   name: sphinx-rtd-theme
@@ -3360,17 +3319,6 @@ packages:
   requires_python: '>=3.6'
 - kind: pypi
   name: sphinxcontrib-applehelp
-  version: 1.0.4
-  url: https://files.pythonhosted.org/packages/06/c1/5e2cafbd03105ce50d8500f9b4e8a6e8d02e22d0475b574c3b3e9451a15f/sphinxcontrib_applehelp-1.0.4-py3-none-any.whl
-  sha256: 29d341f67fb0f6f586b23ad80e072c8e6ad0b48417db2bde114a4c9746feb228
-  requires_dist:
-  - flake8 ; extra == 'lint'
-  - mypy ; extra == 'lint'
-  - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  requires_python: '>=3.8'
-- kind: pypi
-  name: sphinxcontrib-applehelp
   version: 2.0.0
   url: https://files.pythonhosted.org/packages/5d/85/9ebeae2f76e9e77b952f4b274c27238156eae7979c5421fba91a28f4970d/sphinxcontrib_applehelp-2.0.0-py3-none-any.whl
   sha256: 4cd3f0ec4ac5dd9c17ec65e9ab272c9b867ea77425228e68ecf08d6b28ddbdb5
@@ -3383,17 +3331,6 @@ packages:
   requires_python: '>=3.9'
 - kind: pypi
   name: sphinxcontrib-devhelp
-  version: 1.0.2
-  url: https://files.pythonhosted.org/packages/c5/09/5de5ed43a521387f18bdf5f5af31d099605c992fd25372b2b9b825ce48ee/sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl
-  sha256: 8165223f9a335cc1af7ffe1ed31d2871f325254c0423bc0c4c7cd1c1e4734a2e
-  requires_dist:
-  - flake8 ; extra == 'lint'
-  - mypy ; extra == 'lint'
-  - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  requires_python: '>=3.5'
-- kind: pypi
-  name: sphinxcontrib-devhelp
   version: 2.0.0
   url: https://files.pythonhosted.org/packages/35/7a/987e583882f985fe4d7323774889ec58049171828b58c2217e7f79cdf44e/sphinxcontrib_devhelp-2.0.0-py3-none-any.whl
   sha256: aefb8b83854e4b0998877524d1029fd3e6879210422ee3780459e28a1f03a8a2
@@ -3404,18 +3341,6 @@ packages:
   - sphinx>=5 ; extra == 'standalone'
   - pytest ; extra == 'test'
   requires_python: '>=3.9'
-- kind: pypi
-  name: sphinxcontrib-htmlhelp
-  version: 2.0.1
-  url: https://files.pythonhosted.org/packages/6e/ee/a1f5e39046cbb5f8bc8fba87d1ddf1c6643fbc9194e58d26e606de4b9074/sphinxcontrib_htmlhelp-2.0.1-py3-none-any.whl
-  sha256: c38cb46dccf316c79de6e5515e1770414b797162b23cd3d06e67020e1d2a6903
-  requires_dist:
-  - flake8 ; extra == 'lint'
-  - mypy ; extra == 'lint'
-  - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  - html5lib ; extra == 'test'
-  requires_python: '>=3.8'
 - kind: pypi
   name: sphinxcontrib-htmlhelp
   version: 2.1.0
@@ -3449,17 +3374,6 @@ packages:
   requires_python: '>=3.5'
 - kind: pypi
   name: sphinxcontrib-qthelp
-  version: 1.0.3
-  url: https://files.pythonhosted.org/packages/2b/14/05f9206cf4e9cfca1afb5fd224c7cd434dcc3a433d6d9e4e0264d29c6cdb/sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl
-  sha256: bd9fc24bcb748a8d51fd4ecaade681350aa63009a347a8c14e637895444dfab6
-  requires_dist:
-  - flake8 ; extra == 'lint'
-  - mypy ; extra == 'lint'
-  - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  requires_python: '>=3.5'
-- kind: pypi
-  name: sphinxcontrib-qthelp
   version: 2.0.0
   url: https://files.pythonhosted.org/packages/27/83/859ecdd180cacc13b1f7e857abf8582a64552ea7a061057a6c716e790fce/sphinxcontrib_qthelp-2.0.0-py3-none-any.whl
   sha256: b18a828cdba941ccd6ee8445dbe72ffa3ef8cbe7505d8cd1fa0d42d3f2d5f3eb
@@ -3471,17 +3385,6 @@ packages:
   - pytest ; extra == 'test'
   - defusedxml>=0.7.1 ; extra == 'test'
   requires_python: '>=3.9'
-- kind: pypi
-  name: sphinxcontrib-serializinghtml
-  version: 1.1.5
-  url: https://files.pythonhosted.org/packages/c6/77/5464ec50dd0f1c1037e3c93249b040c8fc8078fdda97530eeb02424b6eea/sphinxcontrib_serializinghtml-1.1.5-py2.py3-none-any.whl
-  sha256: 352a9a00ae864471d3a7ead8d7d79f5fc0b57e8b3f95e9867eb9eb28999b92fd
-  requires_dist:
-  - flake8 ; extra == 'lint'
-  - mypy ; extra == 'lint'
-  - docutils-stubs ; extra == 'lint'
-  - pytest ; extra == 'test'
-  requires_python: '>=3.5'
 - kind: pypi
   name: sphinxcontrib-serializinghtml
   version: 2.0.0
@@ -3733,8 +3636,8 @@ packages:
 - kind: pypi
   name: wxpython
   version: 4.2.2
-  url: https://files.pythonhosted.org/packages/78/ff/ab0dce2bb452b3d492605f19bd8512d476da6f7c1f8456170a3da20a2466/wxPython-4.2.2-cp38-cp38-win_amd64.whl
-  sha256: b68a4cc0e5b648a0856ffd399ce04e6b750d9dbfba325c4a1f6201dc8e9e4886
+  url: https://files.pythonhosted.org/packages/a4/f5/8c272764770f47fd419cc2eff4c4fa1c0681c71bcc2f3158b3a83d1339ff/wxPython-4.2.2.tar.gz
+  sha256: 5dbcb0650f67fdc2c5965795a255ffaa3d7b09fb149aa8da2d0d9aa44e38e2ba
   requires_dist:
   - six
   - numpy<1.17 ; python_full_version < '2.8'
