@@ -4,21 +4,21 @@
 	branch = 4.2.x
 [submodule "cp"]
 	path = cp
-	url = git@github.com/CellProfiler/CellProfiler.git
+	url = git@github.com:CellProfiler/CellProfiler.git
 	branch = 4.2.x
 [submodule "core"]
 	path = core
-	url = git@github.com/CellProfiler/core.git
+	url = git@github.com:CellProfiler/core.git
 	branch = 4.2.x
 [submodule "python-javabridge"]
 	path = python-javabridge
-	url = git@github.com/CellProfiler/python-javabridge.git
+	url = git@github.com:CellProfiler/python-javabridge.git
 [submodule "python-bioformats"]
 	path = python-bioformats
-	url = git@github.com/CellProfiler/python-bioformats.git
+	url = git@github.com:CellProfiler/python-bioformats.git
 [submodule "centrosome"]
 	path = centrosome
-	url = git@github.com/CellProfiler/centrosome.git
+	url = git@github.com:CellProfiler/centrosome.git
 [submodule "release"]
 	path = release
 	url = git@github.com:CellProfiler/release.git
