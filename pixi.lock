@@ -137,7 +137,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/02/cc/b7e31358aac6ed1ef2bb790a9746ac2c69bcb3c8588b41616914eb106eaf/exceptiongroup-1.2.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/99/14/298292fce6f163f04ec31a79bb6627d9ca85c9874d402f33415ebae313f7/fonttools-4.54.1-cp39-cp39-macosx_10_9_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/d9/4b/65a107682a5df28e4deb1d17d53c980bdae0ce30325c005262bad351c8d3/h5py-3.6.0-cp39-cp39-macosx_10_9_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/39/ee/3916e34c62c8cdf71a9c05990646be1d661ed6c7c1c1a9c5f960c4327147/h5py-3.7.0-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4e/e7/26045404a30c8a200e960fb54fbaf4b73d12e58cd28e03b306b084253f4f/imageio-2.36.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/62/85c4c919272577931d407be5ba5d71c20f0b616d31a0befe0ae45bb79abd/imagesize-1.4.1-py2.py3-none-any.whl
@@ -280,7 +280,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/02/cc/b7e31358aac6ed1ef2bb790a9746ac2c69bcb3c8588b41616914eb106eaf/exceptiongroup-1.2.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/57/5e/de2e6e51cb6894f2f2bc2641f6c845561361b622e96df3cca04df77222c9/fonttools-4.54.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/0a/39/62ec4c1cc96408f6cf27c1d10a26409b98eb6aa2dda7d9c48d204c09b970/h5py-3.6.0.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/c5/40/7cf58e6230f0e76699f011c6d293dd47755997709a303a4e644823f3a753/h5py-3.7.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4e/e7/26045404a30c8a200e960fb54fbaf4b73d12e58cd28e03b306b084253f4f/imageio-2.36.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ff/62/85c4c919272577931d407be5ba5d71c20f0b616d31a0befe0ae45bb79abd/imagesize-1.4.1-py2.py3-none-any.whl
@@ -524,13 +524,13 @@ packages:
   name: cellprofiler
   version: 4.2.8
   path: ./cp
-  sha256: 4870840288c58ac56c940a1a49c6a6d9a51e35c9c4b23ea04532136c4b68bd73
+  sha256: cb310c196047c773cb251980b7cc7946c35d2447c132bdc1d55918a0fb390960
   requires_dist:
   - boto3>=1.12.28
   - cellprofiler-core==4.2.8
   - centrosome>=1.2.3,<1.3
   - docutils==0.15.2
-  - h5py~=3.6.0,<4
+  - h5py>=3.6.0,<4
   - imageio>=2.5
   - inflect>=2.1,<7
   - jinja2>=2.11.2
@@ -563,12 +563,12 @@ packages:
   name: cellprofiler-core
   version: 4.2.8
   path: ./core
-  sha256: c1d84f424922190814bb2800ffc204dd9dd5999034f681a9bd7298d76ff284bf
+  sha256: b76d634b2be5aa211fb4eba1d527ddecd31135bebb044b919a4f2fe7a7606434
   requires_dist:
   - boto3>=1.12.28
   - centrosome>=1.2.3,<1.3
   - docutils==0.15.2
-  - h5py~=3.6.0
+  - h5py~=3.7.0
   - matplotlib>=3.1.3
   - numpy>=1.18.2
   - prokaryote==2.4.4
@@ -835,21 +835,19 @@ packages:
   requires_python: '>=2.6,!=3.0.*,!=3.1.*,!=3.2.*'
 - kind: pypi
   name: h5py
-  version: 3.6.0
-  url: https://files.pythonhosted.org/packages/0a/39/62ec4c1cc96408f6cf27c1d10a26409b98eb6aa2dda7d9c48d204c09b970/h5py-3.6.0.tar.gz
-  sha256: 8752d2814a92aba4e2b2a5922d2782d0029102d99caaf3c201a566bc0b40db29
+  version: 3.7.0
+  url: https://files.pythonhosted.org/packages/39/ee/3916e34c62c8cdf71a9c05990646be1d661ed6c7c1c1a9c5f960c4327147/h5py-3.7.0-cp39-cp39-macosx_10_9_x86_64.whl
+  sha256: f084bbe816907dfe59006756f8f2d16d352faff2d107f4ffeb1d8de126fc5dc7
   requires_dist:
   - numpy>=1.14.5
-  - cached-property ; python_full_version < '3.8'
   requires_python: '>=3.7'
 - kind: pypi
   name: h5py
-  version: 3.6.0
-  url: https://files.pythonhosted.org/packages/d9/4b/65a107682a5df28e4deb1d17d53c980bdae0ce30325c005262bad351c8d3/h5py-3.6.0-cp39-cp39-macosx_10_9_x86_64.whl
-  sha256: d8cacad89aa7daf3626fce106f7f2662ac35b14849df22d252d0d8fab9dc1c0b
+  version: 3.7.0
+  url: https://files.pythonhosted.org/packages/c5/40/7cf58e6230f0e76699f011c6d293dd47755997709a303a4e644823f3a753/h5py-3.7.0.tar.gz
+  sha256: 3fcf37884383c5da64846ab510190720027dca0768def34dd8dcb659dbe5cbf3
   requires_dist:
   - numpy>=1.14.5
-  - cached-property ; python_full_version < '3.8'
   requires_python: '>=3.7'
 - kind: conda
   name: icu
