@@ -43,7 +43,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/libiconv-1.17-hcfcfb64_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/liblapack-3.9.0-25_win64_mkl.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.47.0-h2466b09_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.4-h442d1da_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.5-h442d1da_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libgfortran-5.3.0-6.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libs-5.3.0-7.tar.bz2
@@ -124,8 +124,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/20/bc79bc575ba2e2a7f70e8a1155618bb1301eaa5132a8271373a6903f73f8/babel-2.16.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b9/fa/123043af240e49752f1c4bd24da5053b6bd00cad78c2be53c0d1e8b975bc/backports.tarfile-1.2.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/c6/d1/428fe22e6b0b090161a01977edab1836662b6442614f1d9ec77df99d4e6f/boto3-1.35.58-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/7c/05/a09e7f96dd7875238a69963da091c8b239329cb3306fbb5af5ad6f6dfb2a/botocore-1.35.58-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/80/ad/b8ca386a511b0b3cf1f9e45426b570a83246b01010a18de87786b212d3b1/boto3-1.35.59-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/05/8c/31ca91afc34b03de36ca560fde66af0c32e205c8a22bf4222b6ae2c424b7/botocore-1.35.59-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/84/c2/80633736cd183ee4a62107413def345f7e6e3c01563dbca1417363cf957e/build-1.2.2.post1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/81/ae/fa2cfeb71f0645b52907a0dae73b22f71da32c4cfe77270358525b3e7e4f/centrosome-1.2.3-cp39-cp39-macosx_10_9_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
@@ -226,7 +226,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/liblapack-3.9.0-25_win64_mkl.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libprotobuf-4.24.4-hb8276f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.47.0-h2466b09_1.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.4-h442d1da_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.5-h442d1da_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/lz4-c-1.9.4-hcfcfb64_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/m2w64-gcc-libgfortran-5.3.0-6.tar.bz2
@@ -266,8 +266,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ed/20/bc79bc575ba2e2a7f70e8a1155618bb1301eaa5132a8271373a6903f73f8/babel-2.16.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b9/fa/123043af240e49752f1c4bd24da5053b6bd00cad78c2be53c0d1e8b975bc/backports.tarfile-1.2.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/c6/d1/428fe22e6b0b090161a01977edab1836662b6442614f1d9ec77df99d4e6f/boto3-1.35.58-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/7c/05/a09e7f96dd7875238a69963da091c8b239329cb3306fbb5af5ad6f6dfb2a/botocore-1.35.58-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/80/ad/b8ca386a511b0b3cf1f9e45426b570a83246b01010a18de87786b212d3b1/boto3-1.35.59-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/05/8c/31ca91afc34b03de36ca560fde66af0c32e205c8a22bf4222b6ae2c424b7/botocore-1.35.59-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/84/c2/80633736cd183ee4a62107413def345f7e6e3c01563dbca1417363cf957e/build-1.2.2.post1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f4/ab/b9601cc270617eae363e1eecd6931b4be2ed50692ab92245c151b4b3b18b/centrosome-1.2.3.tar.gz
       - pypi: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
@@ -405,20 +405,20 @@ packages:
   requires_python: '>=3.8'
 - kind: pypi
   name: boto3
-  version: 1.35.58
-  url: https://files.pythonhosted.org/packages/c6/d1/428fe22e6b0b090161a01977edab1836662b6442614f1d9ec77df99d4e6f/boto3-1.35.58-py3-none-any.whl
-  sha256: 856896fd5fc5871758eb04b27bad5bbbf0fdb6143a923f9e8d10125351efdf98
+  version: 1.35.59
+  url: https://files.pythonhosted.org/packages/80/ad/b8ca386a511b0b3cf1f9e45426b570a83246b01010a18de87786b212d3b1/boto3-1.35.59-py3-none-any.whl
+  sha256: 8f8ff97cb9cb2e1ec7374209d0c09c1926b75604d6464c34bafaffd6d6cf0529
   requires_dist:
-  - botocore>=1.35.58,<1.36.0
+  - botocore>=1.35.59,<1.36.0
   - jmespath>=0.7.1,<2.0.0
   - s3transfer>=0.10.0,<0.11.0
   - botocore[crt]>=1.21.0,<2.0a0 ; extra == 'crt'
   requires_python: '>=3.8'
 - kind: pypi
   name: botocore
-  version: 1.35.58
-  url: https://files.pythonhosted.org/packages/7c/05/a09e7f96dd7875238a69963da091c8b239329cb3306fbb5af5ad6f6dfb2a/botocore-1.35.58-py3-none-any.whl
-  sha256: 647b8706ae6484ee4c2208235f38976d9f0e52f80143e81d7941075215e96111
+  version: 1.35.59
+  url: https://files.pythonhosted.org/packages/05/8c/31ca91afc34b03de36ca560fde66af0c32e205c8a22bf4222b6ae2c424b7/botocore-1.35.59-py3-none-any.whl
+  sha256: bcd66d7f55c8d1b6020eb86f2d87893fe591fb4be6a7d2a689c18be586452334
   requires_dist:
   - jmespath>=0.7.1,<2.0.0
   - python-dateutil>=2.1,<3.0.0
@@ -1636,13 +1636,12 @@ packages:
   timestamp: 1730208101739
 - kind: conda
   name: libxml2
-  version: 2.13.4
-  build: h442d1da_2
-  build_number: 2
+  version: 2.13.5
+  build: h442d1da_0
   subdir: win-64
-  url: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.4-h442d1da_2.conda
-  sha256: 352eb281dcac491b7ed9e01082947d734a2610f3700f1ab18524590a2862f069
-  md5: 46c233e5c137a2de2d1d95ca35ad8d6a
+  url: https://conda.anaconda.org/conda-forge/win-64/libxml2-2.13.5-h442d1da_0.conda
+  sha256: 020466b17c143190bd5a6540be2ceef4c1f8d514408bd5f0adaafcd9d0057b5c
+  md5: 1fbabbec60a3c7c519a5973b06c3b2f4
   depends:
   - libiconv >=1.17,<2.0a0
   - libzlib >=1.3.1,<2.0a0
@@ -1652,8 +1651,8 @@ packages:
   license: MIT
   license_family: MIT
   purls: []
-  size: 1518137
-  timestamp: 1730355951612
+  size: 1511585
+  timestamp: 1731489892312
 - kind: conda
   name: libzlib
   version: 1.3.1
