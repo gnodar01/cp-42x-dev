@@ -6,7 +6,8 @@ authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
 channels = ["conda-forge"]
 #platforms = ["osx-64"]
 # on windows, in git bash: bash --rcfile <(pixi shell-hook -e dev | sed 's/^export Path=/export PATH=/' | tr ';' ':')
-platforms = ["win-64", "osx-64"]
+#platforms = ["win-64", "osx-64"]
+platforms = ["win-64", "osx-64", "linux-64"]
 # platforms = ["osx-64", "osx-arm64"]
 # platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
@@ -22,7 +23,7 @@ cp = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python
 # https://github.com/PyMySQL/mysqlclient/issues/496#issuecomment-1614688099
 env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib -lmysqlclient -rpath $PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
 
-# [feature.mysql.target.linux-64.activation]
+[feature.mysql.target.linux-64.activation]
 # env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
 
 # usage of `%` or `$` and `\\` or `/` will depend on if using e.g. cmd.exe or git bash or ...
@@ -52,8 +53,8 @@ python = "3.9.*"
 # enable this to avoid building wxPython wheel on Linux
 # disable to build wheel from scratch
 # url must be changed to match linux distro: https://extras.wxpython.org/wxPython4/extras/linux/gtk3/
-# [target.linux-64.pypi-dependencies]
-# wxPython = { url = "https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-20.04/wxPython-4.2.1-cp39-cp39-linux_x86_64.whl" }
+[target.linux-64.pypi-dependencies]
+wxPython = { url = "https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04/wxPython-4.2.2-cp39-cp39-linux_x86_64.whl" }
 
 [feature.mysql.dependencies]
 wheel = ">=0.45.0, <0.46"
