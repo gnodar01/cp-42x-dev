@@ -37,9 +37,9 @@ env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib/jvm", JDK_HOME = "$PI
 
 [dependencies]
 setuptools = "64.*"
-scipy = "1.9.0"
+scipy = "==1.9.0"
 numpy = ">=1.20.1,<1.25.0"
-contourpy = "1.1.1"
+contourpy = "==1.1.1"
 
 [target.win-64.dependencies]
 python = "3.8.*"
