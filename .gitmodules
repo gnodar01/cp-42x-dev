@@ -19,6 +19,3 @@
 [submodule "centrosome"]
 	path = centrosome
 	url = git@github.com:CellProfiler/centrosome.git
-[submodule "release"]
-	path = release
-	url = git@github.com:CellProfiler/release.git
