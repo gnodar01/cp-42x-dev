@@ -13,7 +13,7 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [feature.mod.tasks]
 cpwd = { cmd = ["python", "-Wd", "-m", "cellprofiler"] }
-cp = { cmd = ["python", "-m", "cellprofiler"] }
+cp = { cmd = ["python", "-m", "cellprofiler", "-L", "10"] }
 
 [feature.mod.target.osx.tasks]
 cpwd = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
