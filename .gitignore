@@ -2,4 +2,5 @@
 .pixi
 *.egg-info
 .DS_STORE
-
+pyrightconfig.json
+.vscode
