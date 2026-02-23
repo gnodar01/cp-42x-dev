@@ -10,6 +10,7 @@ Clone the directory and setup submodules:
 
 ```bash
 git clone git@github.com:gnodar01/cp-42x-dev.git
+cd cp-42x-dev
 git submodule init
 git submodule update --remote
 ```
