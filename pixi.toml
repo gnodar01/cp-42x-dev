@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "CellProfiler42x"
 version = "4.2.8"
 description = "Dev environment for CP42x"
@@ -19,12 +19,20 @@ cp = { cmd = ["python", "-m", "cellprofiler", "-L", "10"] }
 cpwd = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 cp = { cmd = ["$PIXI_PROJECT_ROOT/.pixi/envs/dev/pythonapp/Contents/MacOS/python", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/bin/python" } }
 
-[feature.mysql.target.unix.activation]
+[feature.mysql.tasks]
+# configure the database - should be run only once, on enviroment creation
+cfg-db = "$PIXI_PROJECT_ROOT/scripts/mysql_test.sh config"
+# run just the exporttodatabase tests
+dbtest = "$PIXI_PROJECT_ROOT/scripts/mysql_test.sh run"
+# run all tests, pass in args if you want them to pass through
+tests = "$PIXI_PROJECT_ROOT/scripts/mysql_test.sh run-all"
+
+[feature.mysql.target.osx.activation]
 # https://github.com/PyMySQL/mysqlclient/issues/496#issuecomment-1614688099
 env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib -lmysqlclient -rpath $PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
 
 [feature.mysql.target.linux-64.activation]
-# env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
+env = { MYSQLCLIENT_CFLAGS = "-I$PIXI_PROJECT_ROOT/.pixi/envs/dev/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$PIXI_PROJECT_ROOT/.pixi/envs/dev/lib" }
 
 # usage of `%` or `$` and `\\` or `/` will depend on if using e.g. cmd.exe or git bash or ...
 [feature.java.target.win-64.activation]
@@ -68,14 +76,17 @@ wxPython = "==4.2.1"
 # disable to build wheel from scratch
 # url must be changed to match linux distro: https://extras.wxpython.org/wxPython4/extras/linux/gtk3/
 [target.linux-64.pypi-dependencies]
-wxPython = { url = "https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04/wxPython-4.2.2-cp39-cp39-linux_x86_64.whl" }
+wxPython = { url = "https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-24.04/wxPython-4.2.2-cp39-cp39-linux_x86_64.whl" }
 
-[feature.mysql.dependencies]
+[feature.mysql.target.osx.dependencies]
 wheel = ">=0.45.0, <0.46"
 mysql = "=8.0"
 
 [feature.mysql.pypi-options]
 no-build-isolation = ["mysqlclient"]
+
+[feature.mysql.target.linux-64.dependencies]
+mysql = "8.0.*"
 
 [feature.java.dependencies]
 openjdk = "11.*"
@@ -90,5 +101,18 @@ cellprofiler-core = { path = "./core", extras = ["test", "dev"], editable = true
 cellprofiler = { path = "./cp", extras = ["test", "build", "docs"], editable = true }
 build = ">=1.2.2, <2"
 
+[feature.publish-onlywheels.pypi-options]
+dependency-overrides = { mysqlclient = "==2.0.3" }
+
+[feature.publish-onlywheels.target.unix.dependencies]
+mysqlclient = "==2.0.3"
+
+[feature.publish.pypi-dependencies]
+cellprofiler-core = { path = "./core", editable = false }
+cellprofiler = { path = "./cp", editable = false }
+
 [environments]
 dev = ["mysql", "java", "mod"]
+prod = ["publish", "java"]
+prod-onlywheels = ["publish", "publish-onlywheels", "java"]
+prod-onlywheels-test = ["mod", "publish-onlywheels", "java", "mysql"]
