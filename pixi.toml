@@ -56,6 +56,7 @@ contourpy = "==1.1.1"
 "scikit-learn" = ">=0.20,<1"
 wheel = ">=0.45.0, <0.46"
 setuptools = "64.*"
+cython = "<3"
 
 
 [target.win-64.dependencies]
