@@ -2479,7 +2479,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/5a/87/b70ad306ebb6f9b585f114d0ac2137d792b48be34d732d60e597c2f8465a/pydantic-2.12.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c0/4a/412d2048be12c334003e9b823a3fa3d038e46cc2d64dd8aab50b31b65499/pydantic_core-2.41.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/7c/01/cba5e0436a0d5deee6f97ba9d50ad10988f045f5b20b2e268a4b08482d68/python_bioformats-4.1.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/5b/e2/3bf9afe20d16ea603c67de9d1af1be2eafeaf15c9c11e65770fd17ccd28e/python_javabridge-4.0.4.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/fc/3a/01745044eca1157c7d7291f2fb4e5cbe360d5b09ab35bed4e3cb0596aab0/python_javabridge-4.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/c9/4b/63f897a96a42c13806e55d36988ea7bb7f86543857dee90f95c707233b38/pyzmq-22.3.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/cd/df/1145dc9389138eb47649806b42aaad5b0ecdfd3e93c7c51c1fffd80a8f90/sentry_sdk-0.18.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl
@@ -3246,7 +3246,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/bd/24/12818598c362d7f300f18e74db45963dbcb85150324092410c8b49405e42/pyproject_hooks-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/51/ff/f6e8b8f39e08547faece4bd80f89d5a8de68a38b2d179cc1c4490ffa3286/pytest-7.4.4-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7c/01/cba5e0436a0d5deee6f97ba9d50ad10988f045f5b20b2e268a4b08482d68/python_bioformats-4.1.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/5b/e2/3bf9afe20d16ea603c67de9d1af1be2eafeaf15c9c11e65770fd17ccd28e/python_javabridge-4.0.4.tar.gz
+      - pypi: https://files.pythonhosted.org/packages/fc/3a/01745044eca1157c7d7291f2fb4e5cbe360d5b09ab35bed4e3cb0596aab0/python_javabridge-4.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/c9/4b/63f897a96a42c13806e55d36988ea7bb7f86543857dee90f95c707233b38/pyzmq-22.3.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/45/be/3ea20dc38b9db08387cf97997a85a7d51527ea2057d71118feb0aa8afa55/readme_renderer-43.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/3f/51/d4db610ef29373b879047326cbf6fa98b6c1969d6f6dc423279de2b1be2c/requests_toolbelt-1.0.0-py2.py3-none-any.whl
@@ -14951,6 +14951,12 @@ packages:
   name: python-javabridge
   version: 4.0.4
   sha256: 6a8232615bfa4cc472c7115ef52626febef9b1212a53505e79ccbef3e6d9afe0
+  requires_dist:
+  - numpy>=1.20.1,<2
+- pypi: https://files.pythonhosted.org/packages/fc/3a/01745044eca1157c7d7291f2fb4e5cbe360d5b09ab35bed4e3cb0596aab0/python_javabridge-4.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: python-javabridge
+  version: 4.0.4
+  sha256: 8c52d3cc547ce79388c9d04d666ac22207bd9e3247fb7eca2180b58df37523dd
   requires_dist:
   - numpy>=1.20.1,<2
 - conda: https://conda.anaconda.org/conda-forge/osx-64/python.app-1.4-py39h06d86d0_4.conda
