@@ -43,13 +43,10 @@ env = { JAVA_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm", JDK_HOME = "%CONDA_PREF
 [feature.java.activation]
 env = { JAVA_HOME = "$CONDA_PREFIX/lib/jvm", JDK_HOME = "$CONDA_PREFIX/lib/jvm" }
 
-[pypi-dependencies]
-
 [dependencies]
 matplotlib = ">=3.1.3,<3.8"
 pywavelets = "<1.6"
 boto3 = ">=1.12.28,<1.16.63"
-setuptools = "64.*"
 tifffile = "<2022.4.22"
 scipy = "==1.9.0"
 #numpy = "==1.21.6"
@@ -57,6 +54,8 @@ numpy = ">=1.20.1,<1.25.0"
 contourpy = "==1.1.1"
 "scikit-image" = "==0.18.3"
 "scikit-learn" = ">=0.20,<1"
+wheel = ">=0.45.0, <0.46"
+setuptools = "64.*"
 
 
 [target.win-64.dependencies]
@@ -68,9 +67,11 @@ python = "3.9.*"
 [target.osx.dependencies]
 "python.app" = ">=1.4,<2"
 
+[pypi-options]
+no-build-isolation = ["mysqlclient"]
+
 [target.osx-arm64.pypi-dependencies]
 wxPython = "==4.2.1"
-
 
 # enable this to avoid building wxPython wheel on Linux
 # disable to build wheel from scratch
@@ -79,11 +80,7 @@ wxPython = "==4.2.1"
 wxPython = { url = "https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-24.04/wxPython-4.2.2-cp39-cp39-linux_x86_64.whl" }
 
 [feature.mysql.target.osx.dependencies]
-wheel = ">=0.45.0, <0.46"
 mysql = "=8.0"
-
-[feature.mysql.pypi-options]
-no-build-isolation = ["mysqlclient"]
 
 [feature.mysql.target.linux-64.dependencies]
 mysql = "8.0.*"
@@ -108,13 +105,10 @@ dependency-overrides = { mysqlclient = "==2.0.3" }
 mysqlclient = "==2.0.3"
 
 [feature.publish.pypi-dependencies]
-setuptools = "*"
-wheel = "*"
 cellprofiler-core = { path = "./core", editable = false }
 cellprofiler = { path = "./cp", editable = false }
 
 [environments]
 dev = ["mysql", "java", "mod"]
-prod = ["publish", "java"]
 prod-onlywheels = ["publish", "publish-onlywheels", "java"]
 prod-onlywheels-test = ["mod", "publish-onlywheels", "java", "mysql"]
