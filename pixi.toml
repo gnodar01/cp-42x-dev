@@ -108,6 +108,8 @@ dependency-overrides = { mysqlclient = "==2.0.3" }
 mysqlclient = "==2.0.3"
 
 [feature.publish.pypi-dependencies]
+setuptools = "*"
+wheel = "*"
 cellprofiler-core = { path = "./core", editable = false }
 cellprofiler = { path = "./cp", editable = false }
 
