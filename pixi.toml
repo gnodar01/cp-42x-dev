@@ -44,12 +44,6 @@ env = { JAVA_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm", JDK_HOME = "%CONDA_PREF
 env = { JAVA_HOME = "$CONDA_PREFIX/lib/jvm", JDK_HOME = "$CONDA_PREFIX/lib/jvm" }
 
 [dependencies]
-matplotlib = ">=3.1.3,<3.8"
-# needed to resolve a conda-forge metadata issue with
-# matplotlib -> qt -> harfbuzz
-# and maven -> openjdk -> harfbuzz
-# TODO: try to move to a matplotlib version that doesn't require pyqt
-harfbuzz = "<9.0.0"
 pywavelets = "<1.6"
 boto3 = ">=1.12.28,<1.16.63"
 tifffile = "<2022.4.22"
@@ -75,6 +69,11 @@ python = "3.9.*"
 
 [pypi-options]
 no-build-isolation = ["mysqlclient"]
+
+[pypi-dependencies]
+# the conda-forge matplotlib comes with pyside for a backend
+# do not use, since we rely on wxpython backend
+matplotlib = ">=2.1.3,<3.8"
 
 [target.osx-arm64.pypi-dependencies]
 wxPython = "==4.2.1"
