@@ -9,7 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          repository: 'gnodar01/cp-42x-dev'
           fetch-depth: 1
           submodules: true
       - name: Setup Pixi
@@ -22,21 +21,19 @@ jobs:
           #environments: prod-onlywheels
           run-install: false
           global-environments: pixi-pack
+      - name: Pack Environment
+        run: |
+          pixi-pack --environment prod-onlywheels --platform linux-64 --use-cache .pixi_pack/cache --ignore-pypi-non-wheel --create-executable pixi.toml
       - run: |
           pwd
           ls -al .
-          which pixi
-          which pixi-pack
-          pixi-pack -h
-      #- name: Pack Environment
-      #  run: |
-      #    pixi-pack --environment prod-onlywheels --platform linux-64 --use-cache .pixi_pack/cache --ignore-pypi-non-wheel --create-executable pixi.toml
-      #- name: Mac - Create Actions Artifact
-      #  if: startsWith(matrix.os, 'macos')
-      #  uses: actions/upload-artifact@v4
-      #  with:
-      #    name: CellProfiler-macOS-${{ env.CP_VERSION }}.zip
-      #    path: ${{ github.workspace }}/distribution/macos/dist/CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+          chmod +x environment.sh
+      - name: Create Actions Artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: environment.zip
+          path: environment.sh
+          overwrite: true
 
   #upload-cp:
   #  name: Upload CellProfiler
