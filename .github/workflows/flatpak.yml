@@ -31,6 +31,7 @@ jobs:
           pwd
           ls -al .
           chmod +x environment.sh
+          tar -cvJf environment.txz environment.sh
       - name: Upload Release Artifacts
         uses: softprops/action-gh-release@v2
         with:
@@ -39,7 +40,7 @@ jobs:
           fail_on_unmatched_files: true
           name: v4.2.8.1-linux-environment
           files: |
-            environment.zip
+            environment.txz
       - name: Display Upload Info
         run: |
           echo "url: ${{ steps.upload-artifacts.outputs.url }}"
