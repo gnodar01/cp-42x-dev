@@ -18,10 +18,10 @@ jobs:
           pixi-version: v0.62.2
           #cache: true
           #cache-write: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
+          #locked: true
+          #environments: prod-onlywheels
           run-install: false
-          environments: prod-onlywheels
           global-environments: pixi-pack
-          locked: true
       - run: |
           pwd
           ls -al .
