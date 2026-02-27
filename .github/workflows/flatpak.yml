@@ -1,0 +1,54 @@
+name: Create CellProfiler Flatpak
+jobs:
+  pack-env:
+    name: Pack Environment
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          submodules: true
+      - name: Setup Pixi
+        uses: prefix-dev/setup-pixi@v0.9.4
+        with:
+          pixi-version: v0.62.2
+          #cache: true
+          #cache-write: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
+          #locked: true
+          #environments: prod-onlywheels
+          run-install: false
+          global-environments: pixi-pack
+      - name: Pack Environment
+        run: |
+          pixi-pack --environment prod-onlywheels --platform linux-64 --use-cache .pixi_pack/cache --ignore-pypi-non-wheel --create-executable pixi.toml
+      - run: |
+          pwd
+          ls -al .
+          chmod +x environment.sh
+      - name: Upload Release Artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: true
+          fail_on_unmatched_files: true
+          name: v4.2.8.1-linux-environment
+          files: |
+            environment.zip
+      - name: Display Upload Info
+        run: |
+          echo "url: ${{ steps.upload-artifacts.outputs.url }}"
+          echo "release id: ${{ steps.upload-artifacts.outputs.id }}"
+          echo "upload_url: ${{ steps.upload-artifacts.outputs.upload_url }}"
+          echo "assets: ${{ steps.upload-artifacts.outputs.assets }}"
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
