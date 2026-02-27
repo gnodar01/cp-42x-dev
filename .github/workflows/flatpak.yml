@@ -3,8 +3,6 @@ jobs:
   pack-env:
     name: Pack Environment
     runs-on: ubuntu-latest
-    outputs:
-      cp-version: ${{ steps.get-cp-version-mac.outputs.CP_VERSION }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -35,59 +33,49 @@ jobs:
           path: environment.sh
           overwrite: true
 
-  #upload-cp:
-  #  name: Upload CellProfiler
-  #  needs: build-cp
-  #  runs-on: ubuntu-latest
-  #  env:
-  #    CP_VERSION: ${{ needs.build-cp.outputs.cp-version }}
-  #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #  permissions:
-  #    contents: write
-  #    actions: write
-  #  steps:
-  #    - name: Checkout
-  #      uses: actions/checkout@v4
-  #      with:
-  #        # need to get git tags for setuptools-scm
-  #        fetch-depth: 0
-  #    - name: Download Mac Actions Artifact
-  #      uses: actions/download-artifact@v4
-  #      with:
-  #        name: CellProfiler-macOS-${{ env.CP_VERSION }}.zip
-  #        path: ./
-  #    - name: Download Windows Actions Artifact
-  #      uses: actions/download-artifact@v4
-  #      with:
-  #        name: CellProfiler-Windows-${{ env.CP_VERSION }}.exe
-  #        path: ./
-  #    - name: Upload Release Artifacts
-  #      id: upload-artifacts
-  #      uses: softprops/action-gh-release@v1
-  #      with:
-  #        draft: true
-  #        prerelease: true
-  #        fail_on_unmatched_files: true
-  #        name: ${{ env.CP_VERSION }}
-  #        tag_name: ${{ env.CP_VERSION }}
-  #        files: |
-  #          /home/runner/work/CellProfiler/CellProfiler/CellProfiler-macOS-${{ env.CP_VERSION }}.zip
-  #          /home/runner/work/CellProfiler/CellProfiler/CellProfiler-Windows-${{ env.CP_VERSION }}.exe
-  #    - name: Display Upload Info
-  #      run: |
-  #        echo "url: ${{ steps.upload-artifacts.outputs.url }}"
-  #        echo "release id: ${{ steps.upload-artifacts.outputs.id }}"
-  #        echo "upload_url: ${{ steps.upload-artifacts.outputs.upload_url }}"
-  #        echo "assets: ${{ steps.upload-artifacts.outputs.assets }}"
-  #    - name: Delete Action Artifacts
-  #      # artifacts attached to the action no longer necessary
-  #      # since they have been uploaded to releases
-  #      id: delete-artifacts
-  #      uses: geekyeggo/delete-artifact@v4
-  #      with:
-  #          name: |
-  #            CellProfiler-macOS-${{ env.CP_VERSION }}.zip
-  #            CellProfiler-Windows-${{ env.CP_VERSION }}.exe
+  upload-cp:
+    name: Upload Environment
+    needs: pack-env
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+          submodules: true
+      - name: Download Actions Artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: environment.zip
+          path: ./
+      - name: Upload Release Artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: true
+          fail_on_unmatched_files: true
+          name: v4.2.8.1
+          files: |
+            environment.sh
+      - name: Display Upload Info
+        run: |
+          echo "url: ${{ steps.upload-artifacts.outputs.url }}"
+          echo "release id: ${{ steps.upload-artifacts.outputs.id }}"
+          echo "upload_url: ${{ steps.upload-artifacts.outputs.upload_url }}"
+          echo "assets: ${{ steps.upload-artifacts.outputs.assets }}"
+      - name: Delete Action Artifacts
+        # artifacts attached to the action no longer necessary
+        # since they have been uploaded to releases
+        id: delete-artifacts
+        uses: geekyeggo/delete-artifact@v5
+        with:
+            name: |
+              environment.zip
 
 on:
   workflow_dispatch:
