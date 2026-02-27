@@ -1,0 +1,99 @@
+name: Create CellProfiler Flatpak
+jobs:
+  pack-env:
+    name: Pack Environment
+    runs-on: ubuntu-latest
+    outputs:
+      cp-version: ${{ steps.get-cp-version-mac.outputs.CP_VERSION }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          repository: 'gnodar01/cp-42x-dev'
+          fetch-depth: 1
+          submodules: true
+      - name: Setup Pixi
+        uses: prefix-dev/setup-pixi@v0.9.4
+        with:
+          pixi-version: v0.62.2
+          cache: true
+          cache-write: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
+          environments: prod-onlywheels
+          global-environments: pixi-pack
+          locked: true
+          run-install: false
+      - run: |
+          pwd
+          ls -al .
+          which pixi
+          which pixi-pack
+          pixi-pack -h
+      #- name: Pack Environment
+      #  run: |
+      #    pixi-pack --environment prod-onlywheels --platform linux-64 --use-cache .pixi_pack/cache --ignore-pypi-non-wheel --create-executable pixi.toml
+      #- name: Mac - Create Actions Artifact
+      #  if: startsWith(matrix.os, 'macos')
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+      #    path: ${{ github.workspace }}/distribution/macos/dist/CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+
+  #upload-cp:
+  #  name: Upload CellProfiler
+  #  needs: build-cp
+  #  runs-on: ubuntu-latest
+  #  env:
+  #    CP_VERSION: ${{ needs.build-cp.outputs.cp-version }}
+  #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #  permissions:
+  #    contents: write
+  #    actions: write
+  #  steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v4
+  #      with:
+  #        # need to get git tags for setuptools-scm
+  #        fetch-depth: 0
+  #    - name: Download Mac Actions Artifact
+  #      uses: actions/download-artifact@v4
+  #      with:
+  #        name: CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+  #        path: ./
+  #    - name: Download Windows Actions Artifact
+  #      uses: actions/download-artifact@v4
+  #      with:
+  #        name: CellProfiler-Windows-${{ env.CP_VERSION }}.exe
+  #        path: ./
+  #    - name: Upload Release Artifacts
+  #      id: upload-artifacts
+  #      uses: softprops/action-gh-release@v1
+  #      with:
+  #        draft: true
+  #        prerelease: true
+  #        fail_on_unmatched_files: true
+  #        name: ${{ env.CP_VERSION }}
+  #        tag_name: ${{ env.CP_VERSION }}
+  #        files: |
+  #          /home/runner/work/CellProfiler/CellProfiler/CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+  #          /home/runner/work/CellProfiler/CellProfiler/CellProfiler-Windows-${{ env.CP_VERSION }}.exe
+  #    - name: Display Upload Info
+  #      run: |
+  #        echo "url: ${{ steps.upload-artifacts.outputs.url }}"
+  #        echo "release id: ${{ steps.upload-artifacts.outputs.id }}"
+  #        echo "upload_url: ${{ steps.upload-artifacts.outputs.upload_url }}"
+  #        echo "assets: ${{ steps.upload-artifacts.outputs.assets }}"
+  #    - name: Delete Action Artifacts
+  #      # artifacts attached to the action no longer necessary
+  #      # since they have been uploaded to releases
+  #      id: delete-artifacts
+  #      uses: geekyeggo/delete-artifact@v4
+  #      with:
+  #          name: |
+  #            CellProfiler-macOS-${{ env.CP_VERSION }}.zip
+  #            CellProfiler-Windows-${{ env.CP_VERSION }}.exe
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
