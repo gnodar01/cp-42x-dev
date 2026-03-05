@@ -33,6 +33,7 @@ jobs:
 
   create-repo:
     name: Create Flatpak Repo
+    needs: pack-env
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/andyhomes/flatter/gnome:49
@@ -78,8 +79,8 @@ jobs:
   # See "Github Pages" below
   deploy:
     name: Deploy Flatpak Repo
+    needs: create-repo
     runs-on: ubuntu-latest
-    needs: flatter
     permissions:
       pages: write
       id-token: write
