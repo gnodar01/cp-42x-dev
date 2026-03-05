@@ -49,9 +49,9 @@ jobs:
         with:
           name: packed-environment
           path: ./distribution/linux
-      - name: Inspect downloaded artifact
+      - name: Set exec bit
         run: |
-          ls -al distribution/linux
+          chmod +x distribution/linux/environment.sh
       - name: Setup GPG
         if: ${{ github.triggering_actor == github.repository_owner }}
         id: gpg
