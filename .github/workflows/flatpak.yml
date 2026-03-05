@@ -48,7 +48,7 @@ jobs:
         uses: actions/download-artifact@v8
         with:
           name: packed-environment
-          path: ./environment.sh
+          path: ./distribution/linux/environment.sh
       - name: Setup GPG
         if: ${{ github.triggering_actor == github.repository_owner }}
         id: gpg
