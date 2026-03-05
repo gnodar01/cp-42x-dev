@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: packed-environment
-          path: ./distribution/linux/environment.sh
+          path: ./environment.sh
           compression-level: 0
           overwrite: true
 
