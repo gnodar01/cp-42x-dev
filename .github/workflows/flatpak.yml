@@ -36,7 +36,7 @@ jobs:
     needs: pack-env
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/andyhomes/flatter/gnome:49
+      image: ghcr.io/andyholmes/flatter/gnome:49
       options: --privileged
     steps:
       - name: Checkout
