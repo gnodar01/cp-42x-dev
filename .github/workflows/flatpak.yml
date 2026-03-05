@@ -49,6 +49,9 @@ jobs:
         with:
           name: packed-environment
           path: ./distribution/linux
+      - name: Inspect downloaded artifact
+        run: |
+          ls -al distribution/linux
       - name: Setup GPG
         if: ${{ github.triggering_actor == github.repository_owner }}
         id: gpg
