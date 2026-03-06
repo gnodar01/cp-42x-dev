@@ -1,6 +1,6 @@
 [workspace]
 name = "CellProfiler42x"
-version = "4.2.8"
+version = "4.2.8.1"
 description = "Dev environment for CP42x"
 authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
 channels = ["conda-forge"]
