@@ -63,10 +63,10 @@ jobs:
       #  run: |
       #    echo "flatpak.cellprofiler.org" > CNAME
       - name: Build
-        # generated flatpak artifact (org.cellprofiler.CellProfiller.flatpak)
+        # generated flatpak build-bundle artifact (org.cellprofiler.CellProfiller.flatpak)
         #     is a zip named: org.cellprofiler.CellProfiler-x86_64
         #     link to latest build can be generated with: https://nightly.link/
-        # generated repo artifact for gh pages is
+        # generated flatpak repo artifact for gh pages is
         #     a zip named: github-pages unzipping to artifact.tar then untarring to artifact/
         # artifact/ contains index.flatpakrepo
         # see: https://github.com/andyholmes/flatter?tab=readme-ov-file#github-pages
@@ -75,7 +75,9 @@ jobs:
           files: distribution/linux/org.cellprofiler.CellProfiler.yml
           arch: x86_64
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
+          # build-bundle
           upload-bundles: true
+          # repo
           upload-pages-artifact: true
           upload-pages-includes: |
             distribution/linux/index.html
