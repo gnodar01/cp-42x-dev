@@ -27,6 +27,12 @@ dbtest = "$PIXI_PROJECT_ROOT/scripts/mysql_test.sh run"
 # run all tests, pass in args if you want them to pass through
 tests = "$PIXI_PROJECT_ROOT/scripts/mysql_test.sh run-all"
 
+[target.osx.activation]
+# needed until https://github.com/prefix-dev/pixi/issues/1573 is resolved
+# python.app has a post-link script that coppies the contents of the pythonapp directory to a new python.app directory
+# that is not being run, hence the need for this hack
+scripts = ["scripts/link-pythonapp.sh"]
+
 [feature.mysql.target.osx.activation]
 # https://github.com/PyMySQL/mysqlclient/issues/496#issuecomment-1614688099
 env = { MYSQLCLIENT_CFLAGS = "-I$CONDA_PREFIX/include/mysql", MYSQLCLIENT_LDFLAGS = "-L$CONDA_PREFIX/lib -lmysqlclient -rpath $CONDA_PREFIX/lib" }
