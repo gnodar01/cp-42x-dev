@@ -56,6 +56,8 @@ contourpy = "==1.1.1"
 wheel = ">=0.45.0, <0.46"
 setuptools = "64.*"
 cython = "<3"
+# duplicated here since conda deps resolved here, then pypi, and it gets pinned to a wrong version
+matplotlib = "<3.8"
 
 [target.win-64.dependencies]
 python = "3.8.*"
