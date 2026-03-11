@@ -86,7 +86,6 @@ jobs:
         run: |
           ls -al .
 
-  # See "Github Pages" below
   deploy:
     name: Deploy Flatpak Repo
     needs: create-repo
