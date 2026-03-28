@@ -9,10 +9,7 @@ Mostly it just serves to reproduce a `pixi` setup.
 Clone the directory and setup submodules:
 
 ```bash
-git clone git@github.com:gnodar01/cp-42x-dev.git
-cd cp-42x-dev
-git submodule init
-git submodule update --remote
+git clone --recursive https://github.com/gnodar01/cp-42x-dev.git
 ```
 
 [Install pixi](https://pixi.sh/latest/#__tabbed_1_1)
