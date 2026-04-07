@@ -18,6 +18,12 @@ git clone --recursive https://github.com/gnodar01/cp-42x-dev.git
 curl -fsSL https://pixi.sh/install.sh | bash
 ```
 
+Enter the repository
+
+```bash
+cd cp-42x-dev
+```
+
 Install the project dependencies:
 
 ```bash
