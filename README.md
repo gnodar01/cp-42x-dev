@@ -27,7 +27,7 @@ cd cp-42x-dev
 Install the project dependencies:
 
 ```bash
-pixi install --all
+pixi install -e dev
 ```
 
 Run cellprofiler:
