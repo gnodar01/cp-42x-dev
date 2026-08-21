@@ -24,6 +24,8 @@ Enter the repository
 cd cp-42x-dev
 ```
 
+**NOTE:** If building on Linux, the wx dependency is pinned to a particular Linux version (Ubuntu 24.04 as of August 2026); ensure you change the `pixi.toml` file to point to the wheel for your version of Linux. Linux wheels can be found at https://extras.wxpython.org/wxPython4/extras/linux/gtk3/
+
 Install the project dependencies:
 
 ```bash
