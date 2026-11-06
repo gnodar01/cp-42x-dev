@@ -42,7 +42,7 @@ env = { MYSQLCLIENT_CFLAGS = "-I$CONDA_PREFIX/include/mysql", MYSQLCLIENT_LDFLAG
 
 # usage of `%` or `$` and `\\` or `/` will depend on if using e.g. cmd.exe or git bash or ...
 [feature.java.target.win-64.activation]
-env = { JAVA_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm", JDK_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm" }
+env = { JAVA_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm", JDK_HOME = "%CONDA_PREFIX%\\Library\\lib\\jvm", PYTEST_ADDOPTS = "-p no:faulthandler" }
 #env = { JAVA_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/Library/lib/jvm", JDK_HOME = "$PIXI_PROJECT_ROOT/.pixi/envs/dev/Library/lib/jvm" }
 #env = { JAVA_HOME = "$PIXI_PROJECT_ROOT\\.pixi\\envs\\dev\\Library\\lib\\jvm", JDK_HOME = "$PIXI_PROJECT_ROOT\\.pixi\\envs\\dev\\Library\\lib\\jvm" }
 
