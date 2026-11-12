@@ -15,6 +15,10 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 cpwd = { cmd = ["python", "-Wd", "-m", "cellprofiler"] }
 cp = { cmd = ["python", "-m", "cellprofiler", "-L", "10"] }
 
+# build sphinx docs into cp/docs/build; pass a different sphinx builder as an arg, e.g. `pixi run docs latexpdf`
+docs = { cmd = ["python", "$PIXI_PROJECT_ROOT/scripts/docs.py"] }
+docs-clean = { cmd = ["python", "$PIXI_PROJECT_ROOT/scripts/docs.py", "clean"] }
+
 [feature.mod.target.osx.tasks]
 cpwd = { cmd = ["$CONDA_PREFIX/python.app/Contents/MacOS/python", "-Wd", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$CONDA_PREFIX/bin/python" } }
 cp = { cmd = ["$CONDA_PREFIX/python.app/Contents/MacOS/python", "-m", "cellprofiler"], env = { PYTHONEXECUTABLE = "$CONDA_PREFIX/bin/python" } }
