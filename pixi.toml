@@ -15,7 +15,9 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 cpwd = { cmd = ["python", "-Wd", "-m", "cellprofiler"] }
 cp = { cmd = ["python", "-m", "cellprofiler", "-L", "10"] }
 
-# build sphinx docs into cp/docs/build; pass a different sphinx builder as an arg, e.g. `pixi run docs latexpdf`
+# build sphinx docs into cp/docs/build
+# can pass a different sphinx builder as an arg, e.g. `pixi run docs latexpdf`
+# this task is redundant with / supersedes `cd cp/docs; make html`
 docs = { cmd = ["python", "$PIXI_PROJECT_ROOT/scripts/docs.py"] }
 docs-clean = { cmd = ["python", "$PIXI_PROJECT_ROOT/scripts/docs.py", "clean"] }
 
