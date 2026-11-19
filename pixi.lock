@@ -996,7 +996,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/mysql-server-8.0.33-h03692dd_6.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.5-h0622a9a_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/numpy-1.24.4-py39h892e69a_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-64/openjdk-11.0.30-h48c29e7_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/openjdk-11.0.33.1-hf65eb98_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/openjpeg-2.5.3-h036ada5_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.2-hc881268_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/pillow-11.3.0-py39h1fda9f2_0.conda
@@ -1200,7 +1200,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/mysql-server-8.0.33-h0e37e67_6.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-h5e97a16_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/numpy-1.24.4-py39h485cf63_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-11.0.30-h258754b_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-11.0.33.1-h2da27d0_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.3-h889cd5d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.2-hd24854e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/pillow-11.3.0-py39hfea3036_0.conda
@@ -1414,7 +1414,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/mkl-2024.2.2-h57928b3_16.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/msys2-conda-epoch-20160418-1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/win-64/numpy-1.24.4-py38h1d91fd2_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/win-64/openjdk-11.0.30-he453025_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/openjdk-11.0.33.1-h18f690b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/openjpeg-2.5.0-ha2aaf27_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/openssl-3.6.2-hf411b9b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pcre2-10.47-hd2b5f0e_0.conda
@@ -5386,6 +5386,7 @@ packages:
   license: GPL-2.0-or-later WITH Classpath-exception-2.0
   license_family: GPL
   purls: []
+  run_exports: {}
   size: 172108009
   timestamp: 1729479636246
 - conda: https://conda.anaconda.org/conda-forge/linux-64/openjdk-11.0.30-ha668962_0.conda
@@ -8795,6 +8796,17 @@ packages:
   purls: []
   size: 170823996
   timestamp: 1771444034506
+- conda: https://conda.anaconda.org/conda-forge/osx-64/openjdk-11.0.33.1-hf65eb98_0.conda
+  sha256: 7860e106f5889705c7f96b857fde393f15fc63b459559416c43950bd9c5eed7d
+  md5: f91fc0f851958916bec26daedfc38f5c
+  depends:
+  - __osx >=11.0
+  - libzlib >=1.3.2,<2.0a0
+  license: GPL-2.0-or-later WITH Classpath-exception-2.0
+  purls: []
+  run_exports: {}
+  size: 170164178
+  timestamp: 1795047950708
 - conda: https://conda.anaconda.org/conda-forge/osx-64/openjpeg-2.5.3-h036ada5_1.conda
   sha256: fea2a79edb123fda31d73857e96b6cd24404a31d41693d8ef41235caed74b28e
   md5: 38f264b121a043cf379980c959fb2d75
@@ -10307,6 +10319,17 @@ packages:
   purls: []
   size: 168935939
   timestamp: 1771444130710
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-11.0.33.1-h2da27d0_0.conda
+  sha256: 5a3982ba2b791b62516b1efd5d5709b70f6b1b63e6a316f2b17ef15af7e3538d
+  md5: 2e83aa60f8ed94b0df60ef90a5911e8a
+  depends:
+  - __osx >=11.0
+  - libzlib >=1.3.2,<2.0a0
+  license: GPL-2.0-or-later WITH Classpath-exception-2.0
+  purls: []
+  run_exports: {}
+  size: 168295909
+  timestamp: 1795047845546
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.3-h889cd5d_1.conda
   sha256: 6013916893fcd9bc97c479279cfe4616de7735ec566bad0ee41bc729e14d31b2
   md5: ab581998c77c512d455a13befcddaac3
@@ -11825,6 +11848,19 @@ packages:
   purls: []
   size: 169943435
   timestamp: 1771445558503
+- conda: https://conda.anaconda.org/conda-forge/win-64/openjdk-11.0.33.1-h18f690b_0.conda
+  sha256: 3e5a506d733f54ff5e781e5c447e39e0ba99af40081442e4b09fd74e9ea16ec1
+  md5: 5386bc2cdb1813cb96937030d8ee9561
+  depends:
+  - symlink-exe-runtime >=1.0,<2.0a0
+  - vc >=14.3,<15
+  - vc14_runtime >=14.44.35208
+  - ucrt >=10.0.20348.0
+  license: GPL-2.0-or-later WITH Classpath-exception-2.0
+  purls: []
+  run_exports: {}
+  size: 169365661
+  timestamp: 1795047834156
 - conda: https://conda.anaconda.org/conda-forge/win-64/openjpeg-2.5.0-ha2aaf27_2.conda
   sha256: 1fb72db47e9b1cdb4980a1fd031e31fad2c6a4a632fc602e7d6fa74f4f491608
   md5: db0490689232e8e38c312281df6f31a2
@@ -12416,7 +12452,7 @@ packages:
   - sphinx>=3.1.1 ; extra == 'docs'
   - sphinx-rtd-theme>=0.5.0 ; extra == 'docs'
   - pytest~=7.4.1 ; extra == 'test'
-  requires_python: '>=3.8'
+  requires_python: '>=3.8,<3.10'
 - pypi: direct+https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-24.04/wxpython-4.2.3-cp39-cp39-linux_x86_64.whl
   name: wxpython
   version: 4.2.3
